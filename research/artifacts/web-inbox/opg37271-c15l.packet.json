@@ -11,7 +11,7 @@
   "problem_id": "problem:opg-37271-star-chromatic-index-cubic",
   "problem_contract_sha256": "5277056f9268355396375347348a4034902eaa2034148921ac239643f58cf2e6",
   "harness_snapshot_sha256": "864332ad9a52297d98699c0ee7084d50bb3efb583c3cae7923a580deab9a6e99",
-  "base_revision": "1b2e1a6fda9ee30b832aa1ec3459623838faf0c4",
+  "base_revision": "d18d600313481f1f03e7844c3919d9cb9b506428",
   "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
   "attempt_id": "attempt:web-20260906-opg37271-a01",
   "route_id": "route:leaf-extension-six-colors-v1",
@@ -87,7 +87,8 @@
     "Positive palette audits use a superset of realizable boundaries; they are not negative abstract-profile witnesses.",
     "The cubic suppression can have parallel edges and must not be confused with the simple cubic completion.",
     "Original degree-two vertices and former leaf supports remain different types.",
-    "No trusted mathematical receipt or root closure is provided."
+    "No trusted mathematical receipt or root closure is provided.",
+    "The packet base is synchronized to d18d600313481f1f03e7844c3919d9cb9b506428; the unchanged proof retains its original derivation base 1b2e1a6fda9ee30b832aa1ec3459623838faf0c4."
   ],
   "open_obligations": [
     "obligation:opg37271-leaf-extension",
