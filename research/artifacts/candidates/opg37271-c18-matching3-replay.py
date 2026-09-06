@@ -1,5 +1,4 @@
 """Solver-free reconstruction, coverage and simple-path replay of C18 rows."""
-import base64
 import hashlib
 import itertools as it
 import json
@@ -7,7 +6,6 @@ from pathlib import Path
 import platform
 import resource
 import signal
-import zlib
 
 
 def demand(ok,msg):
@@ -67,10 +65,25 @@ def main():
     resource.setrlimit(resource.RLIMIT_AS,(512*1024**2,512*1024**2))
     here=Path(__file__).parent; p=here/'opg37271-c18-matching3-certificate.json'
     raw=p.read_bytes(); demand(len(raw)<262144,'input size')
-    obj=json.loads(raw); dec=zlib.decompressobj()
-    unpacked=dec.decompress(base64.b64decode(obj['rows_zlib_base64'],validate=True),262145)
-    demand(len(unpacked)<=262144 and dec.eof and not dec.unconsumed_tail and not dec.unused_data,'decompression size')
-    rows=json.loads(unpacked); n,p4,c4=validate(rows)
+    obj=json.loads(raw); perms=list(it.permutations(range(5)))
+    masks=obj['case_mask_by_permutation']; words=obj['canonical_matching_words']
+    templates=obj['cycle_color_templates']; rows=[]
+    demand(len(masks)==120 and len(words)==5 and len(templates)==5,'table dimensions')
+    demand(all(len(t)==5 and set(t)<=set((0,4,5,6)) for t in templates),'templates')
+    for i,mask in enumerate(masks):
+        demand(type(mask) is int and 0<=mask<32,'mask')
+        for j,m in enumerate(words):
+            if not mask>>j&1: continue
+            for perm in it.permutations('123'):
+                tr=dict(zip('123',perm)); first=[int(tr[x]) for x in m]; second=[0]*5
+                for v,w in enumerate(perms[i]): second[w]=first[v]
+                c=first.copy()
+                for lab in (first,second):
+                    rare=[a for a in (1,2,3) if lab.count(a)==1]
+                    demand(len(rare)==1,'rare color')
+                    a=rare[0]; c.extend(x or a for x in templates[lab.index(a)])
+                rows.append([i,''.join(map(str,first)),''.join(map(str,c))])
+    n,p4,c4=validate(rows)
     mutations=[]
     tests=[('missing_row',lambda: validate(rows[:-1])),
            ('duplicate_row',lambda: validate(rows+[rows[0]])),

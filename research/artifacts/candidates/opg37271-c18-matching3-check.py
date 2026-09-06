@@ -1,8 +1,6 @@
 """Bounded constructive audit: specified strong 3-colored perfect matching."""
 from __future__ import annotations
 import hashlib
-import base64
-import zlib
 import itertools as it
 import json
 from pathlib import Path
@@ -115,6 +113,28 @@ def main():
             c,S=construct(10,E,list(mu)); need(len(S)==2,'two repairs')
             direct_check(10,E,c)
             rows.append([pi,''.join(map(str,mu)),''.join(map(str,c))]); covered.add(pi)
+    def normal(w):
+        table={}
+        return ''.join(str(table.setdefault(x,len(table)+1)) for x in w)
+    canonical=[row for row in rows if normal(row[1])==row[1]]
+    expanded=[]
+    for pi,m,c in canonical:
+        for perm in it.permutations('123'):
+            table=dict(zip('123',perm))
+            expanded.append([pi,''.join(table[x] for x in m),''.join(table.get(x,x) for x in c)])
+    need(sorted(expanded)==sorted(rows),'palette equivariance')
+    normalized_words=sorted({m for _,m,_ in canonical})
+    masks=[sum(1<<normalized_words.index(m) for j,m,_ in canonical if i==j) for i in range(120)]
+    templates=[[6,4,0,4,5],[5,6,4,0,4],[4,5,6,4,0],[0,4,5,6,4],[4,0,4,5,6]]
+    perms=list(it.permutations(range(5)))
+    for i,m,c in canonical:
+        first=list(map(int,m)); second=[0]*5
+        for v,w in enumerate(perms[i]): second[w]=first[v]
+        recolored=first.copy()
+        for lab in (first,second):
+            a=next(t for t in (1,2,3) if lab.count(t)==1)
+            recolored.extend(x or a for x in templates[lab.index(a)])
+        need(''.join(map(str,recolored))==c,'template fidelity')
     # Positive fixtures with all non-five cycle lengths, plus subcubic paths.
     fixture_count=0
     for n in range(3,101):
@@ -136,8 +156,12 @@ def main():
          'runtime':platform.python_version(),'proper_five_cycle_words':len(words),
          'permutations_checked':120,'precolors_per_permutation':243,
          'eligible_graph_precolors':len(rows),'distinct_labeled_eligible_graphs':len(covered),
-         'rows_zlib_base64':base64.b64encode(zlib.compress(json.dumps(rows,separators=(',',':')).encode(),9)).decode(),
-         'rows_format':'zlib-compressed UTF-8 JSON list of [permutation_index, matching_color_word, full_color_word]',
+         'canonical_matching_words':normalized_words,
+         'case_mask_by_permutation':masks,
+         'cycle_color_templates':templates,
+         'template_rule':'Choose the row indexed by the unique rare matching-color vertex on the ordered C5; replace 0 by that rare color.',
+         'expansion':'For every selected normalized word, apply all six permutations of 123 to matching colors and template 0 replacements; fix 456.',
+         'normalized_rows':len(canonical),
          'encoding':'permutations(range(5)) lexicographic; M edges (i,5+pi(i)); F first C5 then second C5, cyclic index order',
          'additional_fixtures':fixture_count,'mutations':mutations,
          'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
@@ -145,5 +169,5 @@ def main():
     raw=json.dumps(out,sort_keys=True,separators=(',',':'))+'\n'
     need(len(raw.encode())<262144,'output budget')
     Path(__file__).with_name('opg37271-c18-matching3-certificate.json').write_text(raw)
-    print(json.dumps({k:out[k] for k in out if k!='rows_zlib_base64'},sort_keys=True))
+    print(json.dumps({k:out[k] for k in out},sort_keys=True))
 if __name__=='__main__': main()
