@@ -1,0 +1,66 @@
+{
+  "assumptions": [],
+  "atomic_claims": [],
+  "attempt_id": "attempt:web-20260906-opg37271-a01",
+  "base_revision": "790984f77c13e691aaac4ea86b8253e9b82a83f5",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg37271-continuation-smoke-1",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/candidate-opg37271-continuation-smoke-1.md",
+      "sha256": "1b1798d231bb4c1c10a3f2e2b73e3cd883bc8dee0160ce44effeb5a2c318e672"
+    }
+  ],
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "created_at": "2026-09-06T05:48:01Z",
+  "failed_route_proposal": null,
+  "generator": {
+    "model_fingerprint_status": "unverified",
+    "model_label": "non-mathematical-continuation-smoke",
+    "principal": "trusted-continuation-smoke"
+  },
+  "graph_id": "graph:opg37271-initial-v1",
+  "harness_snapshot_sha256": "864332ad9a52297d98699c0ee7084d50bb3efb583c3cae7923a580deab9a6e99",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "objective": "Exercise immutable continuation packet 1 without a mathematical claim.",
+  "obligation_id": "obligation:opg37271-leaf-extension",
+  "open_obligations": [
+    "obligation:opg37271-leaf-extension",
+    "obligation:opg37271-root"
+  ],
+  "problem_contract_sha256": "5277056f9268355396375347348a4034902eaa2034148921ac239643f58cf2e6",
+  "problem_id": "problem:opg-37271-star-chromatic-index-cubic",
+  "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762531,
+    "default_branch": "main",
+    "node_id": "R_kgDOUP0SIw"
+  },
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "risks": [
+    "Transport-only; not mathematical evidence."
+  ],
+  "route_id": "route:leaf-extension-six-colors-v1",
+  "schema_version": "1.1.0",
+  "source_refs": [
+    {
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "relation": "exact",
+      "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+      "revision": "790984f77c13e691aaac4ea86b8253e9b82a83f5"
+    }
+  ],
+  "transport": {
+    "branch": "web/attempt-web-20260906-opg37271-a01-continuation-smoke-1",
+    "issue_number": 3,
+    "issue_url": "https://github.com/vibemathing/problem-opg-37271-star-chromatic-index-cubic/issues/3",
+    "pull_request_number": 4,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-37271-star-chromatic-index-cubic/pull/4"
+  },
+  "verdict": "candidate_only"
+}
