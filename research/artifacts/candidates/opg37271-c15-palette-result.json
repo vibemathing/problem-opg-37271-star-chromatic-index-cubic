@@ -1,0 +1,34 @@
+{
+  "fallback_fixture": {
+    "A": [
+      2,
+      4,
+      5
+    ],
+    "B": [
+      3,
+      4,
+      5
+    ],
+    "a": 2,
+    "b": 3,
+    "chosen_xw": 6,
+    "chosen_xz": 3,
+    "p": 1
+  },
+  "five_color_chain_boundaries_checked": 3025,
+  "limits": {
+    "cpu_seconds": 15,
+    "memory_mib": 256,
+    "threads": 1,
+    "wall_seconds": 15
+  },
+  "runtime": "3.13.5",
+  "scope": "Positive sufficient-choice checks on all abstract palettes; graph path proof is separate.",
+  "six_color_arm_options": 97,
+  "six_color_low_neighbor_triples_checked": 912673,
+  "triangle_boundaries_checked": 39366,
+  "triangle_fallbacks_checked": 360,
+  "trusted_receipt": false,
+  "verdict": "candidate_only"
+}
