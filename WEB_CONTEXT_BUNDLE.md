@@ -208,72 +208,98 @@ This file is generated from repository truth and bounded for the web channel. It
     "acceptance": {
       "policy": "solution-admission-v1"
     },
-    "aliases": [],
+    "aliases": [
+      "Open Problem Garden OPG-37271"
+    ],
     "allowed_axioms": [
-      "none"
+      "finite-graph-basic",
+      "finite-combinatorics"
     ],
     "assumptions": [
-      "This record must never be treated as an active research problem."
+      "All graphs and digraphs are finite and simple unless the statement explicitly says otherwise."
     ],
     "constraints": {
       "allowed_adapters": [
-        "template-validation-v1"
+        "bounded-graph-enumerator-v1",
+        "sat-certificate-v1",
+        "lean-obligation-v1"
       ],
       "allowed_methods": [
-        "discovery"
+        "discovery",
+        "derivation",
+        "computation",
+        "proof",
+        "formalization"
       ],
-      "max_attempts": 1,
+      "max_attempts": 20,
       "runtime": {
-        "max_output_bytes": 65536,
-        "max_retries": 1,
-        "max_transitions": 10,
-        "timeout_seconds": 60
+        "max_output_bytes": 5242880,
+        "max_retries": 3,
+        "max_transitions": 300,
+        "timeout_seconds": 1800
       }
     },
-    "created_at": "2026-09-06T00:00:00Z",
+    "created_at": "2026-09-06T03:30:00Z",
     "definitions": [
       {
-        "definition": "A non-admitted draft record used only to validate the physical public repository template.",
-        "term": "template placeholder"
+        "definition": "An edge coloring in which incident edges receive different colors.",
+        "term": "proper edge coloring"
+      },
+      {
+        "definition": "A proper edge coloring with no path or cycle of four edges whose edges use only two colors.",
+        "term": "star edge coloring"
+      },
+      {
+        "definition": "The minimum number of colors in a star edge coloring of G.",
+        "term": "star chromatic index χ′ₛ(G)"
       }
     ],
     "domain": {
-      "description": "Template-only placeholder domain; not a mathematical research question.",
+      "description": "Finite simple undirected graphs G with maximum degree Δ(G) ≤ 3.",
       "objects": [
-        "template-placeholder"
+        "finite simple graph",
+        "edge coloring",
+        "star chromatic index"
       ]
     },
-    "lifecycle": "draft",
+    "lifecycle": "active",
     "msc": [
-      "00A00"
+      "05C15"
     ],
-    "problem_id": "problem:template-placeholder",
+    "problem_id": "problem:opg-37271-star-chromatic-index-cubic",
     "quantifiers": [
       {
-        "domain": "a reviewed public canonical ProblemContract supplied by the repository builder",
-        "kind": "find",
+        "domain": "finite simple undirected graphs with maximum degree at most 3",
+        "kind": "forall",
         "variables": [
-          "replacement_problem"
+          "G"
+        ]
+      },
+      {
+        "domain": "edge colorings c:E(G)→{1,…,6}",
+        "kind": "exists",
+        "variables": [
+          "c"
         ]
       }
     ],
     "schema_version": "1.0.0",
     "sources": [
       {
-        "retrieved_at": "2026-09-06T00:00:00Z",
-        "source": "Vibe Mathing public Web Harness",
-        "source_record_id": "public-template-placeholder-v1",
-        "url": "https://github.com/vibemathing/vibe-mathing-problem-public-template"
+        "retrieved_at": "2026-09-02T00:06:43Z",
+        "source": "UnsolvedMath",
+        "source_record_id": "unsolvedmath-opg-37271-a583951f63e7",
+        "url": "https://www.unsolvedmath.com/problems/OPG-37271"
       }
     ],
     "statement": {
       "language": "en",
-      "text": "This is a non-research placeholder. Replace it with exactly one reviewed public ProblemContract before creating a public problem repository.",
+      "text": "For every finite simple graph G with maximum degree at most 3, is the star chromatic index χ′ₛ(G) at most 6?",
       "version": 1
     },
-    "title": "Vibe Mathing public problem repository template placeholder",
-    "updated_at": "2026-09-06T00:00:00Z"
+    "title": "Star chromatic index of subcubic graphs",
+    "updated_at": "2026-09-06T03:30:00Z"
   },
-  "problem_contract_sha256": "e64cd03254e03dd661eade23243c3c21793fc2d8bffa2d33c172cf8ed2e7f940"
+  "problem_contract_sha256": "5277056f9268355396375347348a4034902eaa2034148921ac239643f58cf2e6"
 }
 ```

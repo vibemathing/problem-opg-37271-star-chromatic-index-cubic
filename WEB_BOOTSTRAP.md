@@ -1,18 +1,18 @@
 # Web Research Bootstrap
 
-- Repository: `vibemathing/vibe-mathing-problem-public-template`
+- Repository: `vibemathing/problem-opg-37271-star-chromatic-index-cubic`
 - Repository binding: `verified`
-- Repository database ID: `1358726712`
-- Repository node ID: `R_kgDOUPyGOA`
+- Repository database ID: `1358762531`
+- Repository node ID: `R_kgDOUP0SIw`
 - Default branch: `main`
 - Visibility: `public`
-- Canonical Problem: `problem:template-placeholder`
-- ProblemContract SHA-256: `e64cd03254e03dd661eade23243c3c21793fc2d8bffa2d33c172cf8ed2e7f940`
-- Problem lifecycle: `draft`
-- Problem admission: `preview_unadmitted`
+- Canonical Problem: `problem:opg-37271-star-chromatic-index-cubic`
+- ProblemContract SHA-256: `5277056f9268355396375347348a4034902eaa2034148921ac239643f58cf2e6`
+- Problem lifecycle: `active`
+- Problem admission: `canonical_admitted`
 - Harness suite: `harness-source:web-research-full` `1.1.0`
 - Suite manifest SHA-256: `7dfdb41a68bfda314d663ba03b4b2a713ea194168ade5287e58c6434be5cc4fb`
-- Harness snapshot SHA-256: `2e5a81b661248d816f60d55ad7f5eaa6000fa64fb92820cf305e48652aed6262`
+- Harness snapshot SHA-256: `a2007452a56a8f1d6c4a3089bd54473baa76351bb1830cdae27d7005dc545c3f`
 - Channel: `chatgpt-web-github-issue-pr-writer`
 
 ## Required read order
