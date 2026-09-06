@@ -59,8 +59,8 @@
     "branch": "web/attempt-web-20260906-opg37271-a01-continuation-smoke-2",
     "issue_number": 3,
     "issue_url": "https://github.com/vibemathing/problem-opg-37271-star-chromatic-index-cubic/issues/3",
-    "pull_request_number": null,
-    "pull_request_url": null
+    "pull_request_number": 5,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-37271-star-chromatic-index-cubic/pull/5"
   },
   "verdict": "candidate_only"
 }
