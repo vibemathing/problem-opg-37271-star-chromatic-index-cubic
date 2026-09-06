@@ -145,14 +145,15 @@ def main():
       'end_fixtures':fixtures,'end_colorings_checked':4*len(fixtures),
       'boundary_cases':len(records),'normalized_records':256,
       'normalized_record_fields':['alpha','outside_A','outside_B','images_of_2_through_6'],
-      'normalized_records_zlib_base64':base64.b64encode(zlib.compress(normalized,9)).decode(),
+      'normalized_recipe_rows_stored':False,
+      'normalized_recipe_specification':'All alpha=1 ordered A,B subsets of size at most two; use the complete insertion(4,alpha,A,B) function in the companion source.',
       'normalized_records_sha256':hashlib.sha256(normalized).hexdigest(),
       'all_records_sha256':hashlib.sha256(json.dumps(records,separators=(',',':')).encode()).hexdigest(),
       'periodic_boundary_smoke_cases':len(residues),
       'mutation_fixtures_rejected':['four_edge_path','four_cycle','adjacent_equal_colors','one_rung_naive_closing_color'],
       'universal_claim_scope':'The finite prefix audit is not an all-length proof; the accompanying periodic path argument and outside-component proof are essential.'
     }
-    data=(json.dumps(result,sort_keys=True,indent=2)+'\n').encode()
+    data=(json.dumps(result,sort_keys=True,separators=(',',':'))+'\n').encode()
     need(len(data)<1048576,'output budget')
     Path(__file__).with_name('opg37271-c18d-diamond-chain-result.json').write_bytes(data)
     print(json.dumps({'boundary_cases':len(records),'end_colorings':4*len(fixtures),'head_maxima':result['head_fixture_two_color_component_maxima'],'sha256':hashlib.sha256(data).hexdigest(),'bytes':len(data),'runtime':platform.python_version(),'verdict':'candidate_only'},sort_keys=True))
