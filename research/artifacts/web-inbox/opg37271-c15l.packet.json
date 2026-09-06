@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762531,
+    "node_id": "R_kgDOUP0SIw",
+    "default_branch": "main"
+  },
+  "problem_id": "problem:opg-37271-star-chromatic-index-cubic",
+  "problem_contract_sha256": "5277056f9268355396375347348a4034902eaa2034148921ac239643f58cf2e6",
+  "harness_snapshot_sha256": "864332ad9a52297d98699c0ee7084d50bb3efb583c3cae7923a580deab9a6e99",
+  "base_revision": "1b2e1a6fda9ee30b832aa1ec3459623838faf0c4",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg37271-a01",
+  "route_id": "route:leaf-extension-six-colors-v1",
+  "graph_id": "graph:opg37271-initial-v1",
+  "obligation_id": "obligation:opg37271-leaf-extension",
+  "generator": {
+    "principal": "chatgpt-web-github",
+    "model_label": "GPT-6 Astra Pro",
+    "model_fingerprint_status": "unverified"
+  },
+  "transport": {
+    "branch": "web/attempt-web-20260906-opg37271-a01-c15l",
+    "issue_number": 6,
+    "issue_url": "https://github.com/vibemathing/problem-opg-37271-star-chromatic-index-cubic/issues/6",
+    "pull_request_number": null,
+    "pull_request_url": null
+  },
+  "objective": "Give complete arbitrary-old-coloring extensions for three low-degree configurations and derive a four-type cubic-core template for a hypothetical minimal root counterexample.",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg37271-c15l-reductions",
+      "kind": "proof",
+      "locator": "research/artifacts/candidates/opg37271-c15-low-degree-reductions.md",
+      "sha256": "0b7e180ed9507ff462750f12065cd4526fa54ef7f5a7cdaff2e5cf0c722ec111"
+    },
+    {
+      "candidate_id": "candidate:opg37271-c15l-palette-check",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg37271-c15-palette-check.py",
+      "sha256": "d761a106c09a42729a5ff15089927a139b7704f79ea786e4ad4aeb8185583ec0"
+    },
+    {
+      "candidate_id": "candidate:opg37271-c15l-palette-result",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg37271-c15-palette-result.json",
+      "sha256": "c0b971ba20e88458498fda39aabf1f9340535af98d3ac5fd3d92c417f01c44b3"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "claim:opg37271-c15l-triangle",
+      "text": "A degree-two vertex on a triangle admits an extension of every old star six-edge-coloring, with an explicit singleton-palette fallback.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg37271-c15l-chain",
+      "text": "A degree-two vertex with two degree-two neighbors admits extension of every old star five-edge-coloring.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg37271-c15l-low-neighbors",
+      "text": "A degree-three vertex with three nonadjacent neighbors of degree at most two admits extension of every old star six-edge-coloring.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg37271-c15l-typed-core",
+      "text": "Suppressing the leaf-deleted core of a minimal root counterexample yields a loopless bridgeless cubic multigraph with four explicit reconstruction types.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg37271-c15l-palette-audit",
+      "text": "All 39366 triangle, 3025 chain and 912673 low-neighbor abstract boundaries satisfy the proved sufficient choices in a bounded generator-side run.",
+      "status": "candidate"
+    }
+  ],
+  "assumptions": [
+    "Finite simple subcubic graphs and proper star edge colorings; four-edge paths need not be induced.",
+    "Old colors are universally quantified and unchanged by the local extensions.",
+    "Minimal-counterexample consequences are conditional on minimum vertex order among root counterexamples.",
+    "Only finite-graph-basic and finite-combinatorics."
+  ],
+  "risks": [
+    "Positive palette audits use a superset of realizable boundaries; they are not negative abstract-profile witnesses.",
+    "The cubic suppression can have parallel edges and must not be confused with the simple cubic completion.",
+    "Original degree-two vertices and former leaf supports remain different types.",
+    "No trusted mathematical receipt or root closure is provided."
+  ],
+  "open_obligations": [
+    "obligation:opg37271-leaf-extension",
+    "obligation:opg37271-root"
+  ],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {
+      "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "revision": "1b2e1a6fda9ee30b832aa1ec3459623838faf0c4",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+      "path": "research/records/obligation-graphs.jsonl",
+      "revision": "1b2e1a6fda9ee30b832aa1ec3459623838faf0c4",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+      "path": "research/artifacts/candidates/opg37271-c14-root-reductions.md",
+      "revision": "1b2e1a6fda9ee30b832aa1ec3459623838faf0c4",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+      "path": "research/artifacts/source-notes/opg37271-c15-prior-art.md",
+      "revision": "03cfbe3d9da85d743e3e885dd14d962128bc2c14",
+      "relation": "prior_art"
+    }
+  ],
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T13:31:31.266405Z"
+}
