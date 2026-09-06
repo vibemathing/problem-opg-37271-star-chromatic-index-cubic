@@ -1,0 +1,63 @@
+{
+  "boundary_records_sha256": "2db4a37ef66014541f67877c3a09ecb2cf0e9f9aae189840b4042f6f81652bbd",
+  "boundary_records_zlib_base64": "eNqFmFGO6zoMQzfEn4lFbmYw+9/Ga5veVzuNj4CiHyWcWDq1LPH390e/f6/Pj350aKge3/57/fD8+XhL4/FzPb4naexX1ST5ufIjeb8qsA39e9tLeG5lFmvapZ+rZ9H7EA4F4hOEMQSBDEEotazM+thaVl5Tt33s8WF4CmORjkl7pueYtE9ezxTM6wqeadBCe9H8xifJY1EL9jqzfGTqSw3F+f+T/f6b1KIa8vDheZslUS5KlA1v1TEfy/O1s3RMx2FMGxrLwazXX2hMWsEzDVpoL9vDORakfv+pa1ENkRxT4m/iVEGk8wmt1zlb1VCWRLkoUTa8VWtfaQtKbUGtLSi2BdW2oNzWgtTvBI1F3RXcwopbWHILa25h0S2suoVlt7DuFhZe75EakBqQGpAakBqQGk+pEakRqRGpEakRqRGpEakRqRFp9kgDSANIA0gDSANIg0iDSINIg0iDSINIg0iDSINIw+2Rptu03iVtLOIxqWNuSjSWJulu7ed+OzGsqnFteFea35yvfc1369lOXXVjXPP9ehu3OLYhjm6I4/vgfsX2bOkueji38Pyae+Kz9ahFPCa15m5R84371S2qls747slGNbwrzW+uBen17vXaA+t6+97FNZ/s27j3fbLWO/j17ie4ix7OnDg7Jc6PQTeMQTINQjKNQjINQzKNQzINRDKPRDIPRTKPRTIPRlpv6G+k5uFI5vFI5gFJ5hFJxiHpjAzFPfIg8iDyIPIg8jTI0yBPgzwN8jSnPA3yNMjTIE+DPDwXaxmjzu3XIh67eVPrKHXeKWNRC59sVMO72o5U41LY7/d9TIX3bI6uejhuzbHlK/K5bbvLzNy43WZOnJ0S58egG8yQpbB/2QQyGSIyWSIymSIy2SLikWtcCvs3UrM5cinsm7j3BonMFonMJonMNonMRomMVslQCHkQeRB5EHkQeRB5GuRpTnka5GmQp0GeBnka5GmQp0EedscEZkqJ7JQSGSolslRKZKqUyFapyynPO6njom/dMrG5UmJ7pcQGS4ktlhKbLCW2WUpstJTYaimFkAeRB5EHkQeRB5GH7VGlQZ4GeRrkaZCnQZ4GeRrkaZCzFWNCbkRuRG5EbkRuRO6msLtB7ga5G+RukLtB7ga5G+RukHuP/O8/8nUGdA==",
+  "cases_per_cap_color": 256,
+  "edge_order": [
+    [
+      "a",
+      "p"
+    ],
+    [
+      "b",
+      "q"
+    ],
+    [
+      "p",
+      "r"
+    ],
+    [
+      "p",
+      "s"
+    ],
+    [
+      "q",
+      "r"
+    ],
+    [
+      "q",
+      "s"
+    ],
+    [
+      "r",
+      "s"
+    ]
+  ],
+  "method": "exact finite positive boundary audit; full graph proof is separate",
+  "mutation_fixtures_rejected": [
+    "four_edge_path",
+    "four_cycle",
+    "adjacent_equal_colors"
+  ],
+  "normalized_cap_color": 1,
+  "normalized_records_sha256": "94b8b82226d7300361bf600944a2cfd3755841077bd16b16c88bee3aff7ccb42",
+  "palette_cases": 1536,
+  "per_invocation_limits": {
+    "address_space_mib": 512,
+    "cpu_hard_seconds": 16,
+    "cpu_soft_seconds": 15,
+    "threads": 1,
+    "wall_seconds": 15
+  },
+  "record_fields": [
+    "cap_color",
+    "outside_palette_a",
+    "outside_palette_b",
+    "colors_in_edge_order"
+  ],
+  "runtime": "3.13.5",
+  "small_common_neighbor_colorings_checked": 2,
+  "stored_records": 256,
+  "trusted_receipt": false,
+  "uncompressed_records_bytes": 7777,
+  "verdict": "candidate_only"
+}
