@@ -26,8 +26,8 @@
     "branch": "web/attempt-web-20260906-opg37271-a01-c15l",
     "issue_number": 6,
     "issue_url": "https://github.com/vibemathing/problem-opg-37271-star-chromatic-index-cubic/issues/6",
-    "pull_request_number": null,
-    "pull_request_url": null
+    "pull_request_number": 23,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-37271-star-chromatic-index-cubic/pull/23"
   },
   "objective": "Give complete arbitrary-old-coloring extensions for three low-degree configurations and derive a four-type cubic-core template for a hypothetical minimal root counterexample.",
   "candidate_artifacts": [
