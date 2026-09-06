@@ -26,8 +26,8 @@
     "branch": "web/attempt-web-20260906-opg37271-a01-c14b",
     "issue_number": 6,
     "issue_url": "https://github.com/vibemathing/problem-opg-37271-star-chromatic-index-cubic/issues/6",
-    "pull_request_number": null,
-    "pull_request_url": null
+    "pull_request_number": 22,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-37271-star-chromatic-index-cubic/pull/22"
   },
   "objective": "Derive root-faithful bridge gluing, structural conditions on a vertex-minimal counterexample, and an explicit equivalence with connected simple cubic graphs after the fixed-coloring route fails.",
   "candidate_artifacts": [
