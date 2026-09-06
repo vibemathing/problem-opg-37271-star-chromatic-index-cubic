@@ -26,8 +26,8 @@
     "branch": "web/attempt-web-20260906-opg37271-a01-c01",
     "issue_number": 6,
     "issue_url": "https://github.com/vibemathing/problem-opg-37271-star-chromatic-index-cubic/issues/6",
-    "pull_request_number": null,
-    "pull_request_url": null
+    "pull_request_number": 7,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-37271-star-chromatic-index-cubic/pull/7"
   },
   "objective": "Derive the exact leaf forbidden set and submit a vertex- and edge-minimal no-recoloring obstruction, with an explicitly scoped repair.",
   "candidate_artifacts": [
