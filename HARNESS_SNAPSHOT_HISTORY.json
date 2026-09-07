@@ -1,0 +1,26 @@
+{
+  "entries": [
+    {
+      "harness_snapshot_sha256": "864332ad9a52297d98699c0ee7084d50bb3efb583c3cae7923a580deab9a6e99",
+      "harness_version": "1.1.2",
+      "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+      "source_manifest_sha256": "97499c98e0774ef58c0be06ff8f3035c89cda1dffb6f9a9d222fb281b049cdb4",
+      "tree_sha256": "22f88aaf3fb2033178ad12644f0505c48445ea1e671be731d1e3c75b89875c36"
+    },
+    {
+      "harness_snapshot_sha256": "cf4460cf7b044e1a55010cac5a4bcf84e816cac6d721efb82d7de70f4cf03173",
+      "harness_version": "1.2.3",
+      "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+      "source_manifest_sha256": "27a22779f4ea8418115002a4a180553b0f23425b69e4deb76f2bd6ae893b2993",
+      "tree_sha256": "788dd911fd1c1c9167dbde95f708add2831d63f041281a7f8aa605a082a29de6"
+    }
+  ],
+  "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+  "repository_identity": {
+    "database_id": 1358762531,
+    "default_branch": "main",
+    "node_id": "R_kgDOUP0SIw",
+    "visibility": "public"
+  },
+  "schema_version": "1.0.0"
+}
