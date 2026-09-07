@@ -1,0 +1,15 @@
+{
+  "barrier": "Exact minimum maximum-mu on an escape from the displayed state is2; a two-step 1,2,0 escape is explicit.",
+  "candidate_result": "False: the explicit eight-vertex graph in the certificate has a projected singleton SCC at mu1, expanding to all four phase states; all48 edits are excluded or raise mu.",
+  "claim_id": "claim:opg37271-c24-exit-obstruction",
+  "first_open": "OUTER: select a balanced unrestricted/short-path preframe for every connected simple cubic graph.",
+  "minimum_order": "Eight, conditional on the supplied complete finite smaller-order computation; the explicit counterexample does not depend on minimum-order coverage.",
+  "moves": "Change exactly one entry among 0..4 while preserving preframe premises; freely reoptimize all B phases.",
+  "mu": "Minimum actual bichromatic FOUR-edge simple paths and C4s over every B phase; distinct graph shapes counted, paths modulo reversal and cycles modulo dihedral symmetry.",
+  "root_scope": "This negates a stronger universal reconfiguration route, not all balanced frames or the star-six root. Same graph has an explicit global U-perfect-matching star-five frame.",
+  "schema_version": "candidate-statement-1",
+  "scope": "All finite simple connected cubic graphs and all preframes E=D disjoint-union U with D star A-colored, A={1,2,3,4}; U components paths of one to three edges; B={5,6}; isolated vertices and empty U allowed.",
+  "tested_claim": "Every neutral SCC at positive mu in the nonincreasing edit graph has a lower-mu exit.",
+  "trusted_closure": null,
+  "verdict": "candidate_only"
+}
