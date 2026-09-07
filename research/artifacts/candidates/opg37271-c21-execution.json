@@ -1,0 +1,71 @@
+{
+  "assurance": "No Lean, SMT, registered verifier, EvidenceLink or admission executed.",
+  "command": "python3 research/artifacts/candidates/opg37271-c21-run.py",
+  "input_and_source_sha256": {
+    "opg37271-c19-phase-certificate.json": "9e64005037bc075a78439a3c8bc49d85cf7f8a539a2b3bcba8f8eeded88c4ad3",
+    "opg37271-c21-certificate.json": "942e995c5f85fbafdd8eb3e0546f9548f8a10c953da573ee6e6c3f658b9c33a6",
+    "opg37271-c21-construct.py": "a2480bee3a6d380804c1a9ad0bc1185844ca931cdf520421538d4d8d545aabc8",
+    "opg37271-c21-input.json": "ae0d4482117fc9757315dbc79d647df07bab82f708b60422bc8e0d5a6b593ec6",
+    "opg37271-c21-replay.py": "fe86a62da72d7423fc1ca2c42419fb578ebfc6a5de377bb76b21894aaab2c593",
+    "opg37271-c21-run.py": "b44a3cdabc74b4923130ef78b766ad4b9ef62ef036b7a2b741460786f0742728"
+  },
+  "input_revision": "d4853563085f4310d1d99cb332de62f44c36fbda",
+  "interpreter": {
+    "binary_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+    "implementation": "CPython",
+    "version": "3.13.5"
+  },
+  "limits_per_child": {
+    "address_space_bytes": 805306368,
+    "cpu_hard_seconds": 31,
+    "cpu_soft_seconds": 30,
+    "outer_timeout_seconds": 40,
+    "stderr_bytes": 16384,
+    "stdout_bytes": 1048576,
+    "threads": 1,
+    "wall_seconds": 35
+  },
+  "local_tools": {
+    "lake_found": false,
+    "lean_found": false
+  },
+  "result_sha256": "9b88bcff0540371b71c3317e23cad4a971d7b1b022c2f76f6c9355ee1cbb93fd",
+  "runs": [
+    {
+      "command": [
+        "python3",
+        "opg37271-c21-construct.py",
+        "opg37271-c21-input.json"
+      ],
+      "elapsed_seconds": 1.169646,
+      "ended_at": "2026-09-07T08:20:10.805318+00:00",
+      "exit_code": 0,
+      "started_at": "2026-09-07T08:20:09.635649+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdin_sha256": null,
+      "stdout_bytes": 711552,
+      "stdout_sha256": "8c778515e08759205d772d23f39c335051a6f0377a669628ad46d250a74d3717",
+      "timed_out": false
+    },
+    {
+      "command": [
+        "python3",
+        "opg37271-c21-replay.py"
+      ],
+      "elapsed_seconds": 9.832329,
+      "ended_at": "2026-09-07T08:20:20.638182+00:00",
+      "exit_code": 0,
+      "started_at": "2026-09-07T08:20:10.805927+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdin_sha256": "8c778515e08759205d772d23f39c335051a6f0377a669628ad46d250a74d3717",
+      "stdout_bytes": 7965,
+      "stdout_sha256": "9b88bcff0540371b71c3317e23cad4a971d7b1b022c2f76f6c9355ee1cbb93fd",
+      "timed_out": false
+    }
+  ],
+  "stress_stream_disposition": "Deterministically reconstructed from the committed finite domain and constructor; passed directly to the separate replay, not a trusted receipt. Compact exceptional graph witnesses are committed.",
+  "trust_domain": "web-candidate-generation",
+  "verdict": "candidate_only"
+}
