@@ -1,0 +1,41 @@
+{
+  "child_command": "python3 opg37271-c19e-audit-check.py opg37271-c19-phase-certificate.json",
+  "child_limits": {
+    "cpu_hard_seconds": 31,
+    "cpu_soft_seconds": 30,
+    "file_output_bytes": 262144,
+    "memory_mib": 256,
+    "stdout_bytes": 16384,
+    "threads": 1,
+    "wall_seconds": 35
+  },
+  "child_working_directory": "research/artifacts/candidates",
+  "command": "python3 research/artifacts/candidates/opg37271-c19e-audit-run.py",
+  "elapsed_seconds": 0.666281,
+  "ended_at": "2026-09-07T04:40:10.154065+00:00",
+  "environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "exit_code": 0,
+  "input_repository_revision": "cedbfc277c39317e0d2998733b2d7b45670bac63",
+  "input_sha256": "9e64005037bc075a78439a3c8bc49d85cf7f8a539a2b3bcba8f8eeded88c4ad3",
+  "interpreter": {
+    "implementation": "CPython",
+    "version": "3.13.5"
+  },
+  "note": "Actual local candidate execution; no trusted verifier, EvidenceLink, kernel or root admission. No historical counts are assumed.",
+  "outer_timeout_seconds": 40,
+  "runner_sha256": "7f6e5c54298ec876fd8e2d3c8607c53f81081e7e7b29695ae2f029bf55b612a9",
+  "source_sha256": "2d36043e59b6d319d365be7a82ddde0a28cc541907350a7860f8ec8e12bcb3d6",
+  "started_at": "2026-09-07T04:40:09.487276+00:00",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 1104,
+  "stdout_sha256": "fc330e62e86271b971624e4fe733119df34b6d4f54a93c5a2e6eabb744511b94",
+  "timed_out": false,
+  "trust_domain": "generator",
+  "verdict": "candidate_only"
+}
