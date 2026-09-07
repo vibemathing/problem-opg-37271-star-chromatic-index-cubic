@@ -1,0 +1,35 @@
+{
+  "schema_version": "candidate-local-statement-1",
+  "verdict": "candidate_only",
+  "label": "C20-T1",
+  "primary_statement": "For every finite simple undirected subcubic G with E(G)=D disjoint-union U, every fixed star edge coloring c:D->{1,2,3,4}, and every family of nonempty U components that are vertex-disjoint paths of at most three edges (including the empty family), c extends using only {5,6} on U if and only if every cycle in the signed multigraph of all actual alternating D/U four-edge simple paths and four-cycles with equal D colors has sign XOR zero, where the row for U edges e in P and f in Q has sign 1 XOR p(e) XOR p(f).",
+  "primary_statement_sha256": "bf1e32067e4988e2f36c0d6766c1106a2e68ad3ef6ee79839da311d3222ff8ae",
+  "semantics": {
+    "path": "four edges, five distinct vertices; not necessarily induced",
+    "cycle": "four edges, four distinct vertices",
+    "edge_index_parity": "zero-based within one fixed oriented full U component",
+    "phase": "one bit per nonempty U component",
+    "row_support": "all actual selected shapes retained, including multiple witnesses for one algebraic triple",
+    "signed_cycles": "loops and distinct parallel-edge cycles included; sign XOR, not length parity",
+    "completion": "D colors retained and U restricted to disjoint palette B={5,6}"
+  },
+  "additional_statements": [
+    "Inclusion-minimal inconsistent row subsets are precisely sign-one simple cycles. Minimum cardinality equals shortest negative cycle length, counting row occurrences.",
+    "Forest propagation yields an inclusion-minimal core in O(k+m); sequential parity-cover BFS yields a minimum-cardinality core in O(k(k+m)); every returned row retains a graph witness.",
+    "If an induced matching R in D can be recolored with a spare A color and intersects the fixed edges of every support outside a chosen signed forest triple set, the modified frame has a star completion.",
+    "Contact parity constant on each U component plus a bipartite, self-row-free contact graph suffices for extension with no D change.",
+    "In a strong-four-colored perfect-matching frame, a complementary four-cycle with all four distinct matching labels and only one special edge forces a contradictory self-row; order eight is sharp for this specific class."
+  ],
+  "allowed_mathematical_axioms": [
+    "finite-graph-basic",
+    "finite-combinatorics"
+  ],
+  "proposed_formal_declaration": null,
+  "formalization_status": "pending",
+  "excluded_claims": [
+    "universal outer-frame existence",
+    "root star-six theorem",
+    "fixed leaf-extension assertion",
+    "trusted admission"
+  ]
+}
