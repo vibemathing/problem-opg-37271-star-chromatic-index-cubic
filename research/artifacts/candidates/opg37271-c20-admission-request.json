@@ -1,0 +1,84 @@
+{
+  "schema_version": "candidate-admission-request-1",
+  "kind": "admission_request",
+  "verdict": "candidate_only",
+  "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+  "snapshot_revision": "ddc49c1978a196490702150bb75264793a658457",
+  "candidate_id": "candidate:opg37271-c20-proof",
+  "transport_obligation_id": "obligation:opg37271-leaf-extension",
+  "exact_local_statement_file": "research/artifacts/candidates/opg37271-c20-statement.json",
+  "primary_statement_sha256": "bf1e32067e4988e2f36c0d6766c1106a2e68ad3ef6ee79839da311d3222ff8ae",
+  "admitted_target_for_this_statement": null,
+  "frozen_files": [
+    {
+      "path": "research/artifacts/candidates/opg37271-c20-proof.md",
+      "sha256": "90037f690f2cfe82f607412aced983020eba36cc9a0efc5e2bda84c5781d12cf"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c20-core.py",
+      "sha256": "ff51a6a0f06bf314a55cb20ffecba73cc146ce252b1b9f09ca2cb6f16a759ccc"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c20-test.py",
+      "sha256": "d09353c8f4c9f6c1bab2a153a94f71df71d93023ee9785f462e50747efdef751"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c20-run.py",
+      "sha256": "1ab06addecf26ec82372671e64df0d277124daabb5e054b8e276abaec57480d4"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c20-statement.json",
+      "sha256": "519fc983b2b68808070befa126ecb9e626785cb48764f7d84e434ef34b39a78c"
+    }
+  ],
+  "executable_preflight": [
+    "python3",
+    "research/artifacts/candidates/opg37271-c20-run.py",
+    "--admission-preflight"
+  ],
+  "finite_replay": [
+    "python3",
+    "research/artifacts/candidates/opg37271-c20-run.py"
+  ],
+  "registered_adapter": "scripts/verify_lean_obligation.py",
+  "adapter_schema": "research/schema/lean-obligation-request.schema.json",
+  "registered_adapter_request": null,
+  "formal_source": null,
+  "permitted_verifier_workflow": null,
+  "proposed_verifier_ids": [
+    "lean-kernel",
+    "lean-axiom-auditor",
+    "lean-faithfulness-reviewer"
+  ],
+  "declared_fixture_toolchain": "leanprover/lean4:v4.33.0",
+  "actual_lean_toolchain_fingerprint": null,
+  "axiom_escape_audit": {
+    "status": "pending",
+    "reason": "no faithful Lean source or kernel execution; F2 reasoning is a natural-language proof candidate"
+  },
+  "user_admission_process_authorized": true,
+  "web_principal_role": "candidate_generator_and_transport_writer",
+  "requested_steps": [
+    "Trusted coordinator admits exact local statement and its truthful DAG position; do not equate it to the false leaf-extension statement.",
+    "Register frozen candidate and produce faithful Lean declarations for graph/phase equivalence and core algorithms.",
+    "Admit actual toolchain fingerprint and choose distinct appropriate verifier/semantic review capabilities.",
+    "Provide an authorized mathematical execution entry; current PR workflow is transport-only, and this principal cannot dispatch or modify workflow.",
+    "Run registered verifier, collect actual kernel/axiom/identity receipts and a distinct semantic-faithfulness receipt.",
+    "Only the trusted closure gate may derive Evidence/Result/Solution after exact obligation closure and conflict checks."
+  ],
+  "current_missing_gates": [
+    "no C20 statement in admitted obligations",
+    "candidate record ledger empty",
+    "no formal C20 Lean source",
+    "registered Lean principals have no toolchain_allowlist",
+    "no mathematical-verifier workflow in current repository",
+    "local Lean and Lake absent"
+  ],
+  "semantics": "This is a candidate request with an executable read-only preflight, NOT a fabricated runnable Lean-adapter request. Missing IDs/declarations stay null. No truth write or workflow dispatch is attempted.",
+  "limits": {
+    "timeout_seconds": 40,
+    "max_output_bytes": 262144,
+    "max_memory_bytes": 268435456,
+    "threads": 1
+  }
+}

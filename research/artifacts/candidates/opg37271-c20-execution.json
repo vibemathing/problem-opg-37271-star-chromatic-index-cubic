@@ -1,0 +1,44 @@
+{
+  "axiom_escape_audit": "pending_no_formal_source",
+  "certificate_sha256": "86a94853d21754ba1d1d873c06ca96e49dc5ced29c7fe11e54925a2abfdbcb0b",
+  "command": "python3 research/artifacts/candidates/opg37271-c20-run.py",
+  "elapsed_seconds": 0.834492,
+  "ended_at": "2026-09-07T05:51:36.788347+00:00",
+  "exit_code": 0,
+  "input_revision": "ddc49c1978a196490702150bb75264793a658457",
+  "interpreter": {
+    "implementation": "CPython",
+    "version": "3.13.5"
+  },
+  "interpreter_binary_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+  "limits": {
+    "cpu_hard_seconds": 31,
+    "cpu_soft_seconds": 30,
+    "file_output_bytes": 262144,
+    "memory_mib": 256,
+    "outer_seconds": 40,
+    "stderr_bytes": 16384,
+    "stdout_bytes": 16384,
+    "threads": 1,
+    "wall_seconds": 35
+  },
+  "local_tools": {
+    "lake_found": false,
+    "lean_found": false
+  },
+  "note": "Actual generator-domain run. No registered adapter, mathematical workflow, Evidence or Result operation.",
+  "source_hashes": {
+    "opg37271-c19-phase-certificate.json": "9e64005037bc075a78439a3c8bc49d85cf7f8a539a2b3bcba8f8eeded88c4ad3",
+    "opg37271-c20-core.py": "ff51a6a0f06bf314a55cb20ffecba73cc146ce252b1b9f09ca2cb6f16a759ccc",
+    "opg37271-c20-run.py": "1ab06addecf26ec82372671e64df0d277124daabb5e054b8e276abaec57480d4",
+    "opg37271-c20-test.py": "d09353c8f4c9f6c1bab2a153a94f71df71d93023ee9785f462e50747efdef751"
+  },
+  "started_at": "2026-09-07T05:51:35.953862+00:00",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 589,
+  "stdout_sha256": "0d6da727a359ff09b6ff97a9d5994f34430ea93e95c228b1848924fe068ec6e1",
+  "timed_out": false,
+  "trusted_execution": false,
+  "verdict": "candidate_only"
+}
