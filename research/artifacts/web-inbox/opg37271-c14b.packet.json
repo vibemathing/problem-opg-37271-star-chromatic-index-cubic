@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762531,
+    "node_id": "R_kgDOUP0SIw",
+    "default_branch": "main"
+  },
+  "problem_id": "problem:opg-37271-star-chromatic-index-cubic",
+  "problem_contract_sha256": "5277056f9268355396375347348a4034902eaa2034148921ac239643f58cf2e6",
+  "harness_snapshot_sha256": "864332ad9a52297d98699c0ee7084d50bb3efb583c3cae7923a580deab9a6e99",
+  "base_revision": "d8b2685cc6becd6087335a6c51b944a55f1e6bd1",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg37271-a01",
+  "route_id": "route:leaf-extension-six-colors-v1",
+  "graph_id": "graph:opg37271-initial-v1",
+  "obligation_id": "obligation:opg37271-leaf-extension",
+  "generator": {
+    "principal": "chatgpt-web-github",
+    "model_label": "GPT-6 Astra Pro",
+    "model_fingerprint_status": "unverified"
+  },
+  "transport": {
+    "branch": "web/attempt-web-20260906-opg37271-a01-c14b",
+    "issue_number": 6,
+    "issue_url": "https://github.com/vibemathing/problem-opg-37271-star-chromatic-index-cubic/issues/6",
+    "pull_request_number": 22,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-37271-star-chromatic-index-cubic/pull/22"
+  },
+  "objective": "Derive root-faithful bridge gluing, structural conditions on a vertex-minimal counterexample, and an explicit equivalence with connected simple cubic graphs after the fixed-coloring route fails.",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg37271-c14b-root-reductions",
+      "kind": "proof",
+      "locator": "research/artifacts/candidates/opg37271-c14-root-reductions.md",
+      "sha256": "a00c78b79ee0c027ad6c460d30a98f6316fcb6c18a73c8c4495656ef3b1b8877"
+    },
+    {
+      "candidate_id": "candidate:opg37271-c14b-bridge-completion-check",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg37271-c14-bridge-completion-check.py",
+      "sha256": "a50ba2230103e997ca79d8d74640e14b0285980beba10d3c5067b571593a12b1"
+    },
+    {
+      "candidate_id": "candidate:opg37271-c14b-bridge-completion-result",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg37271-c14-bridge-completion-result.json",
+      "sha256": "2323386f45efbae3ec7d8a884a46c2e775bd66cddaf991e4b6c1c5ec8dc38f1c"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "claim:opg37271-c14b-bridge-criterion",
+      "text": "Two star-colored augmented bridge shores with a common stub color glue exactly when their alternating arm lengths sum to at most four for every other color.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg37271-c14b-palette-gluing",
+      "text": "For at least five colors, a whole-shore palette permutation always supplies this bridge compatibility; the four-color analogue fails for an explicit pair of star-colored trees.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg37271-c14b-forest",
+      "text": "The bridge construction gives an inductive existential star five-edge-coloring of every subcubic forest.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg37271-c14b-minimal-core",
+      "text": "A vertex-minimal root counterexample is connected, has only pendant bridges, and has a 2-connected leaf-deleted core with explicitly distinguished degree-two vertex types.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg37271-c14b-cubic-completion",
+      "text": "Iterated deficient-vertex doubling gives a simple cubic completion and proves equivalence of the root with its connected simple cubic restriction.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg37271-c14b-finite-audit",
+      "text": "The generator checks all 27225 five-color and 93636 six-color signature pairs, and every labeled subcubic graph of orders one through five for the completion construction.",
+      "status": "candidate"
+    }
+  ],
+  "assumptions": [
+    "Finite simple undirected subcubic graphs; star coloring forbids bichromatic simple four-edge paths and four-cycles.",
+    "Bridge gluing starts from star colorings of both shores augmented by a pendant stub.",
+    "The minimum-counterexample conclusions are conditional on existence and minimum vertex order among all subcubic counterexamples.",
+    "Only finite-graph-basic and finite-combinatorics; no fixed-coloring or bounded-edit premise is added to the root."
+  ],
+  "risks": [
+    "The gluing lemma does not accept arbitrary bare-shore colorings without stubs.",
+    "A same-order augmented shore cannot be colored by the minimality hypothesis; leaves are not excluded.",
+    "Cubic completion is not claimed bridgeless, nor is a minimum subcubic counterexample claimed cubic.",
+    "Original degree-two vertices and leaf-support vertices must remain distinguished in the core.",
+    "Finite generator-side audits are not trusted mathematical receipts or universal coloring searches.",
+    "The admitted DAG remains unchanged; these reductions do not close its root."
+  ],
+  "open_obligations": [
+    "obligation:opg37271-leaf-extension",
+    "obligation:opg37271-root"
+  ],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {
+      "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "revision": "d8b2685cc6becd6087335a6c51b944a55f1e6bd1",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+      "path": "research/records/obligation-graphs.jsonl",
+      "revision": "d8b2685cc6becd6087335a6c51b944a55f1e6bd1",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+      "path": "research/artifacts/candidates/opg37271-c01-minimal-leaf-obstruction.md",
+      "revision": "d8b2685cc6becd6087335a6c51b944a55f1e6bd1",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+      "path": "research/artifacts/candidates/opg37271-c08-tree-signatures.md",
+      "revision": "d8b2685cc6becd6087335a6c51b944a55f1e6bd1",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+      "path": "research/artifacts/source-notes/opg37271-c14-prior-art.md",
+      "revision": "db05fcbe68a7591da0db365d3e2d7a8ff99fe603",
+      "relation": "prior_art"
+    }
+  ],
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T13:14:28.434906Z"
+}

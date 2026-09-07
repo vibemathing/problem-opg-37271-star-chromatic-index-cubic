@@ -1,135 +1,81 @@
-# C13: the sharp height boundary for a uniform one-edit tree repair
+# C13H: sharp height boundary for one-old-edge repair on trees
 
 Verdict: `candidate_only`. Primary owner: `math-derivation`.
-Attempt: `attempt:web-20260906-opg37271-a01`; Route: `route:leaf-extension-six-colors-v1`.
-Graph: `graph:opg37271-initial-v1`; target: `obligation:opg37271-leaf-extension`.
-Base: `b1af2ef058f5bca3e81fa2b19fe822f72a107763`.
+Attempt: `attempt:web-20260906-opg37271-a01`.
+Route: `route:leaf-extension-six-colors-v1`.
+Graph: `graph:opg37271-initial-v1`.
+Target: `obligation:opg37271-leaf-extension`; root remains open.
+Base revision: `b1af2ef058f5bca3e81fa2b19fe822f72a107763`.
 
-## 1. Scope
+## 1. Exact scope
 
-Let G be a finite simple subcubic TREE, v a leaf adjacent to u, and c a star edge coloring of H=G-v with available colors {1,...,6}. Define height as max distance from u over ALL vertices of G, not distance from v and not an arbitrarily rerooted height. An old-edge repair counts the number of edges of H whose FINAL colors change; it does not require valid intermediate single-edge steps.
+Height means maximum distance from u, not diameter or distance from the deleted leaf. Let G be a finite simple subcubic TREE, let v be a leaf with neighbor u, and fix a star edge coloring of H=G-v in {1,...,6}. A repair counts changed OLD edges; assigning uv has cost zero. The final coloring, rather than each intermediate edit, defines the task.
 
-Claim candidates:
-- If height <=3, at most one old-edge change always suffices.
-- A height-four, 28-vertex tree and old coloring can require exactly two old-edge changes.
+Claim H3: if every vertex of H has distance at most three from u, a repair changes at most one old edge.
+Claim H4: there is a height-four example on 28 vertices in G with exact repair cost two. This is a sharp height threshold for universal one-edit repair, not an order-minimality theorem or a root obstruction.
 
-Thus height four is the first possible height at which the uniform one-edit assertion fails. The order 28 is not claimed to be smallest. These are fixed-coloring statements, not root counterexamples or a universal two-edit bound. C12R already supplies a different tree attacking the universal two-edit assertion.
+## 2. Height-three proof candidate
 
-## 2. Height at most three: proof candidate
+If the old coloring extends without edits, there is nothing to prove. Otherwise C01's exact forbidden-set equality forces, after relabeling, ux=1, uy=2, xa=3, xb=4, yc=5, yd=6, and an edge of color 1 continuing from each of a,b and color 2 from each of c,d. All these vertices are distinct. In a tree the support az of color 1 has its far endpoint z at distance three from u. Therefore z is a leaf under the height hypothesis. Vertex a has at most one other child w, also a leaf; call its color q when present. Properness gives q different from 1 and 3.
 
-If the exact C01 forbidden set is not saturated, extend without changing anything. Otherwise normalize as in C01:
-ux=1, uy=2, xa=3, xb=4, yc=5, yd=6,
-with distinct named vertices, and unique color-1 supports at a,b and color-2 supports at c,d. In a tree these supports go from depth-two vertices to depth-three vertices. Under height <=3, their far endpoints are leaves.
+Delete az temporarily. The colors forbidding a pendant edge at a are contained in {3,q,4}, omitting q if w is absent. To verify this without a heuristic count, every simple three-edge path from a begins through x, since w is a leaf. Its only possibilities are a-x-u-y, whose first and third colors are 3 and 2, or a-x-b-t with t a child of b. The former is not an alternating witness; the latter forbids only its middle color 4, and only when bt has color 3. This exhausts the paths.
 
-For completeness, the applicable C03 terminal-support argument is as follows. Denote the two supports aa'=1 and bb'=1, with a',b' leaves. If b has no incident color 3, consider recoloring aa'. After deleting a', the root a has at most two incident colors. The neighbor x contributes no extra forbidden color: the middle-color-1 continuation a-x-u-y has colors 3,1,2, and the middle-color-4 continuation cannot finish with 3 at b. The only other neighbor of a contributes at most two further forbidden colors. Therefore at most four colors are forbidden, leaving a legal color different from the current 1.
+Choose delta in {2,5,6} excluding q, and recolor az to delta. At least two choices remain. The exact pendant criterion makes this a star coloring of H. Vertex a now has no incident color 1, while the two roots and the four differently colored spokes are unchanged. Hence color 3 is no longer forbidden at uv. Assign uv=3. Exactly one old edge was changed in the nonextendible case. No assumption about a specially chosen initial coloring was made.
 
-If b does have incident color 3, instead recolor bb'. At b after deleting b', the incident colors are 4,3. Through x the middle color 1 does not alternate through u-y, and the only other candidate middle color 3 is already forbidden by incidence. The other neighbor of b contributes at most two more colors. Again at least two colors are legal, one being the current 1, so a different one can be chosen.
+## 3. Complete height-four witness
 
-The pendant-edge criterion checks the ENTIRE recolored H, including all potential paths through the edited edge. Recoloring aa' removes color 1 at a, freeing color 3 on uv; recoloring bb' similarly frees color 4. Uniqueness of the four differently colored spokes excludes a second witness forbidding the freed color. This proves the candidate bound for every old coloring and every such tree. The twelve-vertex height-three witness of C03 needs one change, so zero cannot replace one here.
+Start with ux=1, uy=2, xa=3, xb=4, yc=5, yd=6. For each i in {a,b,c,d}, add four private vertices zi,li,ri,wi and edges i-zi=A, zi-li=L, zi-ri=R, i-wi=B as follows:
 
-The invariant is terminal support geometry, not a radius-three-only test for arbitrary edits. Height four can place new constraints beyond a support, as the next construction shows.
-
-## 3. Explicit height-four tree
-
-All names below are distinct. Start with edges
-
-| edge | ux | uy | xa | xb | yc | yd |
-|---|---:|---:|---:|---:|---:|---:|
-| old color | 1 | 2 | 3 | 4 | 5 | 6 |
-
-For every i in {a,b,c,d}, add four private vertices z_i,l_i,r_i,w_i and the four edges
-
-| edge | i-z_i | z_i-l_i | z_i-r_i | i-w_i |
+| i | A | B | L | R |
 |---|---:|---:|---:|---:|
-| color | A_i | L_i | R_i | B_i |
+| a | 1 | 2 | 5 | 6 |
+| b | 1 | 3 | 3 | 5 |
+| c | 2 | 1 | 3 | 4 |
+| d | 2 | 5 | 5 | 3 |
 
-using
+Add wb-tb=2, wb-sb=6, wd-td=1, wd-sd=4, with four new leaves. Add v and the uncolored uv. All names are distinct, and there are no other edges. Thus H has 27 vertices and 26 edges, G has 28 vertices and 27 edges, maximum degree is three, and height from u is four. This replaces C11's length-two tails by forks and changes two support-leaf colors; it is not merely deletion from C11.
 
-| i | A_i | L_i | R_i | B_i |
-|---|---:|---:|---:|---:|
-| a | 1 | 5 | 6 | 2 |
-| b | 1 | 3 | 5 | 3 |
-| c | 2 | 3 | 4 | 1 |
-| d | 2 | 5 | 3 | 5 |
+The old coloring is proper. The maximum component sizes in the fifteen two-color subgraphs are:
 
-Add four more private vertices t_b,s_b,t_d,s_d with edges
-w_b-t_b=2, w_b-s_b=6, w_d-t_d=1, w_d-s_d=4.
-Finally add v and uncolored uv. No further edges occur.
+| pairs | maximum edges |
+|---|---:|
+| 1,2; 1,5; 1,6; 2,3; 2,4; 3,5; 3,6; 4,5 | 2 |
+| 1,3; 1,4; 2,5; 2,6; 3,4; 5,6 | 3 |
+| 4,6 | 1 |
 
-There are 28 vertices, 27 edges, and maximum degree three. The z_i,w_i lie at distance three from u; every remaining added vertex lies at distance four. All additions are new leaves or pendant forks on a tree, so G is a tree. This differs from C11 in both certain fork colors and the placement of the four tail edges: they are now sibling leaves at w_b,w_d, not paths extending to height five.
+Every such component is a path because the graph is a tree and the coloring is proper. The edge table permits direct checking of all entries. A separate path-enumeration check is supplied below.
 
-## 4. Old star coloring and original obstructions
+## 4. All one-edit repairs excluded
 
-Properness is checked from the displayed distinct incident palettes; notably the palettes at b,z_b,w_b are {4,1,3}, {1,3,5}, {3,2,6}, respectively. Repetition of 3 at separated vertices is allowed. The symmetric c,d side is obtained by interchanging 1<->2, 3<->5, 4<->6 and x<->y, a<->c, b<->d.
+Let D consist of ux,uy, all four spokes, and the four supports i-zi. Colors 1,2 on uv fail properness. Each spoke color P is blocked by v-u-parent-i-zi, colored P,A,P,A. These six original obstructions involve only D and uv.
 
-For a proper coloring of a tree, each two-color component is a path. The complete maximum component edge lengths are given below, together with those for the final repair of Section 6. Both columns can be checked directly from the edge tables.
+Every edge of D is individually frozen in H. The symmetry swaps x/y, a/c, b/d, corresponding private vertices, and colors 1/2, 3/5, 4/6, so the following left-side cases suffice:
 
-| colors | old H | repaired G |
-|---|---:|---:|
-| 1,2 | 2 | 2 |
-| 1,3 | 3 | 3 |
-| 1,4 | 3 | 2 |
-| 1,5 | 2 | 3 |
-| 1,6 | 2 | 2 |
-| 2,3 | 2 | 2 |
-| 2,4 | 2 | 2 |
-| 2,5 | 3 | 3 |
-| 2,6 | 3 | 3 |
-| 3,4 | 3 | 3 |
-| 3,5 | 2 | 2 |
-| 3,6 | 2 | 2 |
-| 4,5 | 2 | 2 |
-| 4,6 | 1 | 1 |
-| 5,6 | 3 | 3 |
+- ux: alternatives 2,3,4 are improper; 5,6 create x-u-y-c-zc or x-u-y-d-zd.
+- xa: 1,2,4 are improper; 5,6 create u-x-a-za-la or u-x-a-za-ra.
+- xb: 1,3 are improper; 5 creates u-x-b-zb-rb; 2,6 create a-x-b-wb-tb or a-x-b-wb-sb.
+- a-za: 2,3,5,6 are improper; 4 creates za-a-x-b-wb.
+- b-zb: 3,4,5 are improper; 2,6 create lb-zb-b-wb-tb or lb-zb-b-wb-sb.
 
-Thus H is star colored. Colors 1,2 on uv fail properness. Colors 3,4,5,6 respectively give the alternating paths v-u-x-a-z_a, v-u-x-b-z_b, v-u-y-c-z_c, v-u-y-d-z_d. Every original obstruction lies in uv together with the ten edges consisting of the two roots, four spokes and four supports.
+In each listed four-edge path the colors alternate after the proposed edit. The symmetry supplies the other five edges and all fifty alternatives. A single edit inside D cannot even preserve H's star property. A single edit outside D preserves all six original obstructions. Thus no simultaneous assignment of uv and at most one old-edge edit works.
 
-## 5. All ten critical edges are individually frozen
+## 5. Two edits suffice
 
-Here frozen means that changing just this old edge to a different color, leaving all other old edges fixed, cannot give a star coloring of H. It does not forbid simultaneous changes.
+Change b-wb from 3 to 5. The other endpoint palettes are {4,1} and {2,6}, which are disjoint, so a new alternating path cannot use the changed edge internally. Endpoint paths into wb terminate after one more edge; those through b-x cannot continue with 5; those through b-zb with next color 1 reach a leaf after the next 5-edge. Hence this edit is star-preserving.
 
-The following table exhausts all five different-color choices for ux,xa,xb,a-z_a,b-z_b. The palette/vertex symmetry stated above covers uy,yc,yd,c-z_c,d-z_d, so all 50 alternatives are accounted for.
+Change a-za from 1 to 4. Its other endpoint palettes {3,2} and {5,6} are disjoint. Endpoint paths through za or wa terminate at leaves. The only possible alternating continuation through x is za-a-x-b with colors 4,3,4, but b now has no color 3. Hence this edit is also star-preserving. Finally assign uv=3 by C01's exact forbidden-set criterion. The old-edge repair cost is exactly two.
 
-| edited edge | colors failing properness | remaining alternatives and old-H witness |
-|---|---|---|
-| ux (old 1) | 2,3,4 | 5: x-u-y-c-z_c; 6: x-u-y-d-z_d |
-| xa (old 3) | 1,2,4 | 5: u-x-a-z_a-l_a; 6: u-x-a-z_a-r_a |
-| xb (old 4) | 1,3 | 2: y-u-x-b-z_b; 5: u-x-b-z_b-r_b; 6: a-x-b-w_b-s_b |
-| a-z_a (old 1) | 2,3,5,6 | 4: z_a-a-x-b-w_b |
-| b-z_b (old 1) | 3,4,5 | 2: t_b-w_b-b-z_b-l_b; 6: s_b-w_b-b-z_b-l_b |
+## 6. Frozen finite certificate and observed check
 
-Every listed witness is a simple four-edge alternating path in H after the indicated single change. In particular, the possibility of recoloring xb with the opposite root color 2 is blocked by y-u-x-b-z_b, rather than needing an additional deep branch.
+`opg37271-c13-height-certificate.json` gives the old edge list, fifty frozen-edge witnesses, six original leaf obstructions, and the full final coloring. Edge indices refer to that list; uv is appended as edge 26. Its SHA-256 is `6d0f528f957107f25767678bbd5020074fa2e387e58d4bf4897a7f78494b9cc0`.
 
-Suppose an extension changed at most one old edge. If that edge is critical, the restriction to H contradicts this table. If it is not critical, all six original leaf obstructions persist. No change at all is already excluded. This proves the one-edit lower bound without extrapolating a small-instance search.
+`opg37271-c13-height-check.py` reconstructs the tree, checks its domain/height, enumerates every incident pair and every simple four-edge path, checks all fifty witnesses, tests all 786 zero-or-one-edit assignments, and checks the explicit two-edit coloring. It also rejects a mutation assigning uv=1 in the repaired coloring. Cycles are absent by the connected n-1-edge tree check; it is not a general-graph checker.
 
-## 6. Exactly two changes suffice
+Observed local run: CPython 3.13.5, standard library only, one thread, ten-second wall alarm and CPU soft limit, 256 MiB address-space cap. All reported checks passed. Output is saved in `opg37271-c13-height-result.json`. This is generator-side computation, not an admitted adapter run, kernel execution, or trusted mathematical receipt. Repository command-execution capabilities and control files were not changed. The script writes its certificate and result beside itself; replay in a disposable copy when preserving immutable artifacts.
 
-Simultaneously set ux:1->3 and xa:3->5, then set uv=1. All other old colors stay fixed. The final palettes are proper, and the last column in Section 4 verifies every two-color component. For additional direct inspection, the only length-three components in the repaired graph are:
+## 7. Scope and checkpoint
 
-| color pair | length-three components |
-|---|---|
-| 1,3 | l_b-z_b-b-w_b |
-| 1,5 | x-a-z_a-l_a |
-| 2,5 | u-y-c-z_c; l_d-z_d-d-w_d |
-| 2,6 | u-y-d-z_d |
-| 3,4 | u-x-b-w_b |
-| 5,6 | c-y-d-w_d |
+C12R already supplies a different Q2 obstruction candidate; no Q2 search is repeated here. H3/H4 identify a genuine boundary for a one-edit invariant, not a claim that all deeper trees have cost at least two. Sources are the frozen definitions, C01's forbidden-set derivation, and C11's witness as an explicitly changed construction. No novelty assertion or uninspected external theorem is needed.
 
-All other components have at most two edges. This gives the upper bound two. The changes are simultaneous final-color changes; neither chosen ordering is asserted to preserve a star coloring at every intermediate stage.
-
-## 7. Bounded executable audit
-
-`opg37271-c13-height-check.py` is a standalone standard-library generator-side check. It constructs exactly the above tree, checks the height and old coloring, exhausts the 50 critical-edge alternatives, and directly checks all 6*(1+26*5)=786 zero-or-one-edit assignments. It then checks the explicit two-edit extension and both pair tables. Observed output is saved in `opg37271-c13-height-check-result.json`.
-
-Actual runtime: CPython 3.13.5. Limits: wall 20 seconds, CPU soft/hard 20/21 seconds, address space 256 MiB. No solver, GPU, randomness, repository script, or kernel was used. A separate same-domain C08 dynamic-programming check also returned optimum two; the short exhaustive check and proof above do not rely on that DP. The report is a generator output, not a mathematical verifier receipt.
-
-Reproduce from the repository root:
-`python research/artifacts/candidates/opg37271-c13-height-check.py`.
-
-## 8. Dependencies and checkpoint
-
-C01's saturation derivation and C03's terminal-support lemma at the base above are the mathematical dependencies. C11 is the construction comparator, not an unproved minimality premise. All graph identities, color conventions, and height quantifiers are explicit.
-
-Best verified result: none. Best verified candidate: none. Both admitted obligations remain open. No global minimal-order assertion or root implication from this repair obstruction is made.
-
-Next action: prove root-faithful bridge gluing and cubic completion; strengthen hypothetical vertex-minimal counterexample structure without assuming a fixed deletion coloring or claiming that all leaf vertices are reducible.
+Best verified result: none. Best verified candidate: none.
+Both admitted obligations remain open. Next action: derive bridge gluing and cubic completion for the existential root, then audit reducible degree-two and separator configurations without fixing a deleted graph's coloring.

@@ -1,0 +1,24 @@
+{
+  "certificate_sha256": "6d0f528f957107f25767678bbd5020074fa2e387e58d4bf4897a7f78494b9cc0",
+  "changed_edges": [
+    6,
+    13
+  ],
+  "edges_G": 27,
+  "frozen_alternatives_checked": 50,
+  "height_from_u": 4,
+  "limits": {
+    "cpu_seconds": 10,
+    "memory_mib": 256,
+    "threads": 1,
+    "wall_seconds": 10
+  },
+  "mutation_rejected": true,
+  "old_coloring_star": true,
+  "runtime": "3.13.5",
+  "trusted_receipt": false,
+  "two_edit_extension_checked": true,
+  "verdict": "candidate_only",
+  "vertices_G": 28,
+  "zero_or_one_edit_assignments_checked": 786
+}

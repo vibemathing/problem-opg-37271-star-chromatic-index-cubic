@@ -1,0 +1,237 @@
+{
+  "Hall_diagnostics": {
+    "6": {
+      "canonical_profiles": 101,
+      "incompatible": 98,
+      "ordered_cases": 10201
+    },
+    "7": {
+      "canonical_profiles": 101,
+      "incompatible": 0,
+      "ordered_cases": 10201
+    }
+  },
+  "budgets": {
+    "cpu_seconds": 30,
+    "memory_mib": 512,
+    "threads": 1,
+    "wall_seconds": 30
+  },
+  "cuts": [
+    [
+      "Ax0",
+      "Bx0",
+      1
+    ],
+    [
+      "Ax1",
+      "Bx1",
+      1
+    ]
+  ],
+  "edges_G": 20,
+  "four_cycle_fixture_rejected": true,
+  "free_boundary_star_coloring": [
+    [
+      "Ax0",
+      "Ar00",
+      2
+    ],
+    [
+      "Ar00",
+      "At00",
+      1
+    ],
+    [
+      "Ax0",
+      "Ar01",
+      3
+    ],
+    [
+      "Ar01",
+      "At01",
+      1
+    ],
+    [
+      "Ax1",
+      "Ar10",
+      4
+    ],
+    [
+      "Ar10",
+      "At10",
+      1
+    ],
+    [
+      "Ax1",
+      "Ar11",
+      5
+    ],
+    [
+      "Ar11",
+      "At11",
+      1
+    ],
+    [
+      "At00",
+      "At10",
+      6
+    ],
+    [
+      "Bx0",
+      "Br00",
+      4
+    ],
+    [
+      "Br00",
+      "Bt00",
+      1
+    ],
+    [
+      "Bx0",
+      "Br01",
+      5
+    ],
+    [
+      "Br01",
+      "Bt01",
+      1
+    ],
+    [
+      "Bx1",
+      "Br10",
+      4
+    ],
+    [
+      "Br10",
+      "Bt10",
+      1
+    ],
+    [
+      "Bx1",
+      "Br11",
+      5
+    ],
+    [
+      "Br11",
+      "Bt11",
+      1
+    ],
+    [
+      "Bt00",
+      "Bt10",
+      2
+    ],
+    [
+      "Ax0",
+      "Bx0",
+      1
+    ],
+    [
+      "Ax1",
+      "Bx1",
+      6
+    ]
+  ],
+  "rejection_paths_zlib_base64": "eJy1mc1q5EAMhN/F5z7E7p9DbpnXCMOw7GUXFiYkc1hY8u5xj/oydnspdaoOccAkH0KUpJL8+m96+31ZLrfrpUzPr0uIIYUcyjlMbz9uv9ZX08v709MUppe/9Xmyp7063dZf61/+vP65vn/c/30O68/5M/SwJWQ+NlewAltC4mNLza4Cm/nRJkuDAitQQlVtVERblRD52FKzq8BmfrTZyleBFVRZNokpsAIl3OWlSEJtNfRoi80HBVbQwYr1MAVWUGXF6kyBpSshhqXnE2YQG1dsPMTupgMD2/EJHOyugzGwHZ/Awe6q7PvYZGlQYAVKqKpdFNFWJSx8bKnZVWAzP9ps5avACqosm8QUWIES7vJSJKG2Gnq0xeaDAivoYMV6mAIrqLJidabA0pVQ84ptkbNhZ8h+GBbZIt1YbIscwCK7gxuLbZEDWMTfOrER9Ald7LHAIugT3FjMJwxgkengxmI+YQCLdDAnNlv5PmBnE9idZE97dbrNj60mrdh0iN1WGQUbd0ogYbdKoGCrEgRJqK2GHm2x+aDAbjsYBRt3VUbCbquMgs0KJdiZghytdQTkxugaOq3RAEcVNxa7MQ5g6T6htUVFErAboxMbwS3SNXRaEwdssxuLbZEDWLpPaCNHkQRsi3RiU88nzGCrySs2H2J3PoGB7fgEDnbnExjYjk/gYHfT4ftY8wlJgd12MAo27qqMhN1WGQWbFEqwjy/kaJsO2Dtvs6HsEdnkpYgW+wLlxmJfoAawdJ/Qaoy98zaLzx6RrXQV0WI3RjcWuzEOYOk+ofUvYC8z7PyIPVpJ2lEYWKDcWGyLHMAiW6Qbi22RA1hki3RiM+gTutjjoZNBn+DGYj5hAIv4BDcW8wkDWMQn/B97/gKM8KX7",
+  "runtime": "3.13.5",
+  "scope": "generator-side exact finite diagnostics, not a verifier receipt",
+  "shore_A": [
+    [
+      "Ax0",
+      "Ar00",
+      2
+    ],
+    [
+      "Ar00",
+      "At00",
+      1
+    ],
+    [
+      "Ax0",
+      "Ar01",
+      3
+    ],
+    [
+      "Ar01",
+      "At01",
+      1
+    ],
+    [
+      "Ax1",
+      "Ar10",
+      4
+    ],
+    [
+      "Ar10",
+      "At10",
+      1
+    ],
+    [
+      "Ax1",
+      "Ar11",
+      5
+    ],
+    [
+      "Ar11",
+      "At11",
+      1
+    ],
+    [
+      "At00",
+      "At10",
+      6
+    ]
+  ],
+  "shore_B": [
+    [
+      "Bx0",
+      "Br00",
+      2
+    ],
+    [
+      "Br00",
+      "Bt00",
+      1
+    ],
+    [
+      "Bx0",
+      "Br01",
+      3
+    ],
+    [
+      "Br01",
+      "Bt01",
+      1
+    ],
+    [
+      "Bx1",
+      "Br10",
+      2
+    ],
+    [
+      "Br10",
+      "Bt10",
+      1
+    ],
+    [
+      "Bx1",
+      "Br11",
+      3
+    ],
+    [
+      "Br11",
+      "Bt11",
+      1
+    ],
+    [
+      "Bt00",
+      "Bt10",
+      4
+    ]
+  ],
+  "six_color_permutations_rejected": 120,
+  "stub_color": 1,
+  "verdict": "candidate_only",
+  "vertices_G": 20
+}
