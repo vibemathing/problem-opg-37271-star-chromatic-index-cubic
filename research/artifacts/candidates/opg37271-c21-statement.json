@@ -1,0 +1,20 @@
+{
+  "first_open_node": "OUTER: balanced unrestricted frame selection for arbitrary connected simple cubic graphs",
+  "root_proved": false,
+  "statement_sha256": {
+    "K33": "fc8ec39c2c89cb7b4bb4c0cb81c936c066cc1fecf8d724ed18acf47f3204199e",
+    "ODD": "bfb40c37f47fd0af97dfefae9d28171d2dc6916d46746f3b0b7b50d2ccebc272",
+    "PRE": "d89d8ebfebe0175ebaf4f031d0ad7030df5ac3065b7182d660a97ff48321d6c2",
+    "ROOT": "6b119665c8d0ce41750963243f3922b4e0b4789e9d10cfc8435b81835a6dc890",
+    "SQ": "96eb7f473e2646e45500f23cb865b509bd9de4810ccaeb188ca3525b7b333fd4"
+  },
+  "statements": {
+    "K33": "The star chromatic index of K3,3 is exactly six. Hence its entire three-plus-two frame space has no balanced frame, although its unrestricted four-plus-two space does.",
+    "ODD": "Every finite simple cubic graph with a spanning factor whose cycle lengths belong to {3,5} has a star edge coloring with at most six colors.",
+    "PRE": "Every finite simple cubic graph has E=D disjoint-union U where U is a vertex-spanning disjoint union of one-edge and two-edge paths and D has a star edge coloring in {1,2,3,4}; the resulting full C19 signed phase graph has no self row.",
+    "ROOT": "For every finite simple undirected graph G with maximum degree at most 3, there exists a proper edge coloring c:E(G)->{1,2,3,4,5,6} with no bichromatic simple four-edge path or four-cycle.",
+    "SQ": "Every finite simple cubic graph with a spanning factor of four-cycles has a star edge coloring with at most five colors."
+  },
+  "trusted_receipts": [],
+  "verdict": "candidate_only"
+}

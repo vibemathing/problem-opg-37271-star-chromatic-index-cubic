@@ -1,0 +1,70 @@
+{
+  "axiom_escape_receipt": null,
+  "bounds": {
+    "max_output_bytes": 1048576,
+    "memory_bytes": 805306368,
+    "timeout_seconds_per_child": 40
+  },
+  "c20_request": {
+    "path": "research/artifacts/candidates/opg37271-c20-admission-request.json",
+    "sha256": "b0cf28cdb4260a81bca46ee2add3124b0014bf1968d5326c631f13c935d31c28"
+  },
+  "candidate_replay": [
+    "python3",
+    "research/artifacts/candidates/opg37271-c21-run.py"
+  ],
+  "exact_statements": "research/artifacts/candidates/opg37271-c21-statement.json",
+  "formal_source": null,
+  "formal_targets": [
+    "C20 graph-to-phase equivalence with actual path and cycle witnesses",
+    "PRE double-cover matching, short-path factor, D cycle coloring and absence of self rows",
+    "SQ typed opposite matching parity, D even cycles and mixed-witness exclusion",
+    "ODD local recipes, Brooks conflict-graph application and finite exceptional coverage"
+  ],
+  "frozen_files": [
+    {
+      "path": "research/artifacts/candidates/opg37271-c21-proof.md",
+      "sha256": "e5c3d59d235237442b77ecc84e3dea5d3912b5a620ec7c0fcdd2420582c2a8e1"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c21-statement.json",
+      "sha256": "b89f13ca57e4919ac892a4e24da5b6483a9cdce3aa122f616ab41dc7dbfb9544"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c21-construct.py",
+      "sha256": "a2480bee3a6d380804c1a9ad0bc1185844ca931cdf520421538d4d8d545aabc8"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c21-replay.py",
+      "sha256": "fe86a62da72d7423fc1ca2c42419fb578ebfc6a5de377bb76b21894aaab2c593"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c21-certificate.json",
+      "sha256": "942e995c5f85fbafdd8eb3e0546f9548f8a10c953da573ee6e6c3f658b9c33a6"
+    }
+  ],
+  "input_revision": "d4853563085f4310d1d99cb332de62f44c36fbda",
+  "kind": "admission_request",
+  "matching_local_obligation_id": null,
+  "missing_gates": [
+    "No faithful formal source or exact admitted local C20/C21 obligation and candidate binding",
+    "Registered Lean verifier principals lack toolchain_allowlist",
+    "Current workflow directory contains only transport validation",
+    "Separate semantic-faithfulness and axiom/escape audits are pending",
+    "Root OUTER proof is still missing; no local statement can substitute for it"
+  ],
+  "next_gate": "Trusted coordinator binds exact local statements and candidates; formalization plus allowlisted execution and separate semantic review follow. Root stays open regardless of local admission.",
+  "registered_adapter": "scripts/verify_lean_obligation.py",
+  "registered_adapter_request": null,
+  "registered_adapter_schema": "research/schema/lean-obligation-request.schema.json",
+  "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+  "root_closure_requested_without_missing_nodes": false,
+  "schema_version": "candidate-admission-request-1",
+  "toolchain_fingerprint": null,
+  "transport_obligation": "obligation:opg37271-root",
+  "trusted_artifact_digest": null,
+  "trusted_workflow_run": null,
+  "user_authorized_process": true,
+  "verdict": "candidate_only",
+  "web_role_unchanged": "candidate_generator_and_transport_writer"
+}
