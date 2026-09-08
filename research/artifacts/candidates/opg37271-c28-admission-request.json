@@ -1,0 +1,63 @@
+{
+  "axiom_escape_audit": null,
+  "best_verified_result": "none",
+  "closure_receipt": null,
+  "exact_missing_gate": [
+    "Exact local theorem admission/binding is not supplied by root transport provenance.",
+    "No faithful Lean or other formal source for C28 has been supplied.",
+    "No allowlisted trusted mathematical workflow was invoked.",
+    "No separate semantic, axiom/escape or closure receipt has been obtained."
+  ],
+  "expanded_certificate_sha256": "0daae46ecaf220e14841e0aa724da0fb0f71401645eb6d8d91c217c9a01cbc56",
+  "first_open_global_lemma": "Exclude other geometric realizations under the stipulated positive global frame optimum and secondary minimum core, or construct a genuinely improving joint endpoint. The displayed realization is explicitly not a global optimum.",
+  "fixed_files": {
+    "opg37271-c28-certificate-binding.json": "d4e623d1c2c409af5942e425d6e6effd83fa6d572102ab77620b38b738abf326",
+    "opg37271-c28-check.py": "613b9d3824534481234c90ce33191e860d3e3213539626c43e70accbf2c6a6ea",
+    "opg37271-c28-execution.json": "11dd91264459fe9aaa4d113fdcd76f1f83d69a971ec3cdda18b71ce0db32a43e",
+    "opg37271-c28-input.json": "9d73daf8578910cf3b9fc30a885d712d6768d0e7213e0877dbc9218710c75903",
+    "opg37271-c28-produce.py": "aeb9f7f26e57e96e4ff40fb578a97ac641dd7b2ef06f55a63762783330191ad1",
+    "opg37271-c28-proof.md": "74aba38c23bb212ccd32cfbbbd75e6e52adaef04279387f1614bb8f3154a92b4"
+  },
+  "forbidden_shortcuts": [
+    "Do not treat the signed interface alone as a root counterexample.",
+    "Do not use deletion of unproductive D edges to preserve exchange families or global optimality.",
+    "Do not treat support absorption, a shortest chain, CI or merge as an existence proof."
+  ],
+  "formal_source": null,
+  "input_revision": "69b475b0ce24540775d0f0149d446212415146b0",
+  "replay_command": [
+    "python3",
+    "research/artifacts/candidates/opg37271-c28-run.py"
+  ],
+  "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+  "requested_checks": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "schema_version": "c28-admission-request-1",
+  "statement_faithfulness_receipt": null,
+  "statements": [
+    {
+      "name": "C28-R",
+      "scope": "Explicit old and new graph-bound endpoints; phase-optimal only.",
+      "text": "The exact C27 three-variable seven-actual-witness signed pattern and specified zero-gain profile pair have a simple connected cubic realization of order ten, with a genuine exterior-only satisfied chain between two distinct U ports."
+    },
+    {
+      "name": "C28-M",
+      "scope": "Self row forces a three-edge U component; complete sixteen topology/gauge cases at orders eight and nine; exact actual multiplicities, not merely cost-equivalent profiles.",
+      "text": "No simple subcubic exact realization of that old seven-witness pattern exists on at most nine vertices."
+    },
+    {
+      "name": "C28-E",
+      "scope": "Whole P,T,Q U components and prescribed motif colors retained. No classification of other realizations is assumed.",
+      "text": "In every legal simple subcubic completion of the specified thirteen-edge saturated colored motif, recoloring edge89 from3 to4 preserves the frame premises and lowers every phase cost by at least one."
+    }
+  ],
+  "status": "pending_trusted_review",
+  "transport_binding_is_root_proof": false,
+  "transport_obligation": "obligation:opg37271-root",
+  "trusted_run": null,
+  "trusted_toolchain_fingerprint": null,
+  "verdict": "candidate_only"
+}
