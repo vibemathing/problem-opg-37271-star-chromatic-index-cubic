@@ -1,0 +1,1 @@
+{"all_labelled_simple_cubic": 11180820, "automorphisms": [32, 16, 4, 8, 16, 2, 4, 4, 8, 12, 6, 6, 2, 48, 20, 4, 20, 8, 120], "connected_labelled_cubic": 11166120, "degree_DP_cache": 69, "disconnected_labelled_cubic": 14700, "n": 10, "orbit_sum": 11166120, "pairwise_nonisomorphism_tests": 171, "types": 19, "verdict": "candidate_only"}

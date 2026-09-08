@@ -1,0 +1,108 @@
+{
+  "axiom_escape_receipt": null,
+  "best_verified_result": "none",
+  "candidate_finalize": [
+    "python3",
+    "research/artifacts/candidates/opg37271-c25-run.py",
+    "--finish"
+  ],
+  "candidate_replay": [
+    "python3",
+    "research/artifacts/candidates/opg37271-c25-run.py",
+    "--batch",
+    "0",
+    "19"
+  ],
+  "current_missing_gates": [
+    "No admitted exact C25 local obligation/candidate",
+    "No faithful Lean formal source for C25",
+    "No allowlisted mathematical verifier execution for this statement",
+    "No distinct semantic/axiom audit and no root OUTER proof"
+  ],
+  "exact_local_statement": "research/artifacts/candidates/opg37271-c25-statement.json",
+  "formal_source": null,
+  "frozen_inputs": [
+    {
+      "path": "research/artifacts/candidates/opg37271-c25-proof.md",
+      "sha256": "815b8858419a950d91ffdca75f145c902f41dde5e0685e5e84177fe2335f09ab"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c25-graphs.cpp",
+      "sha256": "e12856ff25f2936dac4a7a92af149ff5101f366d61b7bfc22b14c498cca8f59f"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c25-global.cpp",
+      "sha256": "94cf4d650ad86226caa42c16e48befc88a291207932f8acc05754150e5da6fc6"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c25-replay.cpp",
+      "sha256": "7ffceed1ddb700a2e16821c9bf3ac61716b7e685fd3a416a87b86d341500177d"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c25-run.py",
+      "sha256": "46d7155174f8275833ece712ba5165b399bee5b18ec7da56b16638a620f12325"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c25-coverage.py",
+      "sha256": "754dcb7f788ad76dae2f571e86112d5ff989dfa65de5e1379033779aaacf1711"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c25-audit.py",
+      "sha256": "73af2d4ad56edd2a3b300f31f74f3f0fa07b961c90e89325ce6acb2b0ee9d5ef"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c25-mutations.py",
+      "sha256": "9a65ac039a757518f8db8797f73f2c4f3bd6d9ecdb4a6263a754188aea67168b"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c25-graphs10.json",
+      "sha256": "02bf111f0799716770187b1ee14e35734a742648f6369911dbc4ef0c4498dbbc"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c25-summary.json",
+      "sha256": "71303127277cf2326c4957660c6b95dbc38d9be5d1b065c593a5978c762843ed"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c25-coverage.json",
+      "sha256": "936c19f782d932b523a44ed763af55c1a32b9f0b7a180086f7e385ff88c82077"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c25-witnesses.json",
+      "sha256": "65be3958cb99bda0bc35d1a69e5196703756ba1edc867d22aaee0434fef05c27"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c25-audit-result.json",
+      "sha256": "72f79f5921ee7c45d40dae252b9052aa684c7b528a2a97da78e98e4f8f018483"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c25-mutations.json",
+      "sha256": "fac9c0ec1613ff9cbe7c1589cd1fc39f68d9cdfdf00e111c038e7f9dcb2e0571"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c25-run-receipt.json",
+      "sha256": "bc407c47871c415375cb15c98838cc23c87369eceb4950349ed2fce9ed5a7b18"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c25-statement.json",
+      "sha256": "3c83f46d48b2454bdb580f9e5ba9d61896d084f3f4fad1f3741ccfc71593953f"
+    }
+  ],
+  "input_revision": "b66703bd76d56f0791ad58542ec8bc7d3b8ee35b",
+  "kind": "admission_request",
+  "registered_adapter": "scripts/verify_lean_obligation.py",
+  "registered_adapter_request": null,
+  "registered_adapter_schema": "research/schema/lean-obligation-request.schema.json",
+  "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+  "requested_capabilities": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "schema_version": "candidate-admission-request-1",
+  "semantics": "Executable candidate replay is supplied; this is not a fabricated Lean-adapter request. User authorization does not confer a verifier role. Global exchange availability and root remain open; only trusted owners may admit exact statements and receipts.",
+  "statement_file_sha256": "3c83f46d48b2454bdb580f9e5ba9d61896d084f3f4fad1f3741ccfc71593953f",
+  "toolchain_fingerprint": null,
+  "transport_obligation": "obligation:opg37271-root",
+  "trusted_workflow_run": null,
+  "verdict": "candidate_only"
+}
