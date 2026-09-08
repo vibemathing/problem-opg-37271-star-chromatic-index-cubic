@@ -1,0 +1,84 @@
+{
+  "all_exit_zero": true,
+  "best_verified_result": "none",
+  "ended_at": "2026-09-08T12:19:15.460579+00:00",
+  "frozen_sources": {
+    "opg37271-c27-certificate.json": "7e659ef6a661fe482d6dc367cb1bfce8bec1e158fe17875fa29b85fbc54623e8",
+    "opg37271-c27-check.py": "45f08793e43c76e4adc7fc0418558d188be7cbd402d6609f884fe4037a1f2d0b",
+    "opg37271-c27-input.json": "6a92df4e149751b2f72cece0fd55a304b857fe7595a43f7bac3fc2a5c07d9dfb",
+    "opg37271-c27-produce.py": "f1f5fd6c78466bd068e56447843c6e21259341b4668952088af0090bd3c1da79",
+    "opg37271-c27-run.py": "940eb01a96d2f3671942b6743522633f116ee1f807aed72b4d3873e669a45e7b"
+  },
+  "limitation": "Same generator trust domain. No C26 core import, Lean, SMT, admission, or closure execution.",
+  "limits": {
+    "cpu_hard_seconds": 31,
+    "cpu_soft_seconds": 30,
+    "file_bytes": 1048576,
+    "memory_bytes": 805306368,
+    "stderr_bytes": 16384,
+    "stdout_bytes": 65536,
+    "threads": 1,
+    "wall_seconds": 35
+  },
+  "outputs": {
+    "opg37271-c27-certificate-replay.json": {
+      "bytes": 7228,
+      "sha256": "7e659ef6a661fe482d6dc367cb1bfce8bec1e158fe17875fa29b85fbc54623e8"
+    },
+    "opg37271-c27-check-result.json": {
+      "bytes": 1659,
+      "sha256": "0c5506a1469f8868872b705aaebcff02a28d494bed3f07eabbf0853810b3d5dd"
+    },
+    "opg37271-c27-expanded.json": {
+      "bytes": 60153,
+      "sha256": "837c1a38ec3208e91e3b55b07a0ef68d408aaefa103978883ec2348536afb5ec"
+    }
+  },
+  "root_closed": false,
+  "schema_version": "c27-execution-1",
+  "stages": [
+    {
+      "command": [
+        "python3",
+        "opg37271-c27-produce.py"
+      ],
+      "elapsed_seconds": 5.592277,
+      "ended_at": "2026-09-08T12:18:58.436206+00:00",
+      "exit_code": 0,
+      "name": "produce.py",
+      "output_limit_exceeded": false,
+      "started_at": "2026-09-08T12:18:52.843946+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 474,
+      "stdout_sha256": "94dbdad805e5a352b5ad779036929ae4276a0ecd192f1220ded110cbbad49d42",
+      "timeout": false
+    },
+    {
+      "command": [
+        "python3",
+        "opg37271-c27-check.py"
+      ],
+      "elapsed_seconds": 17.023109,
+      "ended_at": "2026-09-08T12:19:15.459618+00:00",
+      "exit_code": 0,
+      "name": "check.py",
+      "output_limit_exceeded": false,
+      "started_at": "2026-09-08T12:18:58.436532+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 1409,
+      "stdout_sha256": "70b7bbc7a19f7d2d78d4d12fddbf5c0dc6552eaddb2ab0c9f45fb680e4905c03",
+      "timeout": false
+    }
+  ],
+  "started_at": "2026-09-08T12:18:52.836095+00:00",
+  "toolchain": {
+    "dependencies": "Python standard library only",
+    "implementation": "CPython",
+    "interpreter_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+    "python": "3.13.5"
+  },
+  "trusted_execution": false,
+  "verdict": "candidate_only"
+}

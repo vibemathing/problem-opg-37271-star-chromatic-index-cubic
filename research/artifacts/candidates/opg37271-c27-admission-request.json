@@ -1,0 +1,68 @@
+{
+  "axiom_escape_receipt": null,
+  "best_verified_result": "none",
+  "candidate_replay": [
+    "python3",
+    "research/artifacts/candidates/opg37271-c27-run.py"
+  ],
+  "exact_statement": "research/artifacts/candidates/opg37271-c27-statement.json",
+  "formal_source": null,
+  "frozen_files": [
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-certificate.json",
+      "sha256": "7e659ef6a661fe482d6dc367cb1bfce8bec1e158fe17875fa29b85fbc54623e8"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-check-result.json",
+      "sha256": "0c5506a1469f8868872b705aaebcff02a28d494bed3f07eabbf0853810b3d5dd"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-check.py",
+      "sha256": "45f08793e43c76e4adc7fc0418558d188be7cbd402d6609f884fe4037a1f2d0b"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-execution.json",
+      "sha256": "38a1a08f50f5a5eca7df5934b6cd8392dd278811ba61b37659a87d7207d139fd"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-input.json",
+      "sha256": "6a92df4e149751b2f72cece0fd55a304b857fe7595a43f7bac3fc2a5c07d9dfb"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-produce.py",
+      "sha256": "f1f5fd6c78466bd068e56447843c6e21259341b4668952088af0090bd3c1da79"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-proof.md",
+      "sha256": "37d04c9008ef7eb00df47543aead08239fc8111275a27ab302364c2da03aac1f"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-run.py",
+      "sha256": "940eb01a96d2f3671942b6743522633f116ee1f807aed72b4d3873e669a45e7b"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-statement.json",
+      "sha256": "e21ea543433827ece0c659a64ead510bd90d44beeee18780ec9ed6b8662c2c89"
+    }
+  ],
+  "kind": "admission_request",
+  "matching_local_obligation_id": null,
+  "missing_gates": [
+    "Exact C27 local statements and candidate binding are not admitted by this web principal.",
+    "No faithful Lean formal source is supplied for these statements.",
+    "No allowlisted trusted mathematical adapter run and separate axiom/faithfulness receipt is supplied.",
+    "Global positive-frame-optimum exchange existence remains open; local transport cannot close root."
+  ],
+  "next_gate": "Trusted coordinator may bind these exact local statements for formalization and review. GLOBAL-EXCHANGE mathematics must continue separately.",
+  "registered_adapter": "scripts/verify_lean_obligation.py",
+  "registered_adapter_request": null,
+  "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+  "root_closure_requested_without_missing_nodes": false,
+  "schema_version": "candidate-admission-request-1",
+  "semantic_receipt": null,
+  "toolchain_fingerprint": null,
+  "transport_obligation": "obligation:opg37271-root",
+  "trusted_artifact_digest": null,
+  "trusted_workflow_run": null,
+  "verdict": "candidate_only"
+}
