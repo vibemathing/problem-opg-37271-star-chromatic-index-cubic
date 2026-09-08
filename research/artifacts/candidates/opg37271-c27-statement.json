@@ -1,0 +1,40 @@
+{
+  "best_verified_result": "none",
+  "claims": [
+    {
+      "name": "ABSORPTION-CEILING",
+      "text": "For fixed valid endpoints F,Q differing only in jointly U-closed S, anchored total optimized cost of Q is nonincreasing as more exterior phase variables are absorbed, and at full absorption equals mu(Q). If mu(Q)>=mu(F), absorption alone never improves at an old optimal phase of F. The same holds for the whole fixed endpoint family E_S."
+    },
+    {
+      "name": "SIGNED-SEPARATOR-PRICE",
+      "text": "For an exterior phase system optimized under one prescribed two-port parity, the opposite-parity minimum minus that minimum equals the minimum signed satisfied-minus-violated cut separating the ports. Positive price forces a satisfied connecting path, but its length does not determine the price."
+    },
+    {
+      "name": "MINIMUM-HULL-CHAIN-FAILURE",
+      "text": "The frozen connected simple cubic eight-vertex frame has a unique self core, two shortest one-row satisfied core-incident chains, and a unique least-cardinality chain hull T. The complete10/16 endpoint families on core hull S/absorbed hull T all have mu>=1; T already contains every old U component. It is not an exterior-only path between two distinct ports and not a positive global frame minimum."
+    },
+    {
+      "name": "JOINT-REPAIR",
+      "text": "All connected one-edge enlargements of T are classified. Minimum successful cardinality among supports containing T is7. A two-edge topology-changing joint exchange on such a support gives mu1 to0; both single-entry intermediates are invalid. The alternate shortest chain has larger hull8 and succeeds."
+    },
+    {
+      "name": "SMALLER-ORDER-COVERAGE",
+      "text": "All full preframe A-name orbits and B phases on K4,K33,prism are checked. Every actual self-core occurrence at every attaining phase has a pointed improving endpoint in its bare hull. Therefore order8 is minimal only for this declared self-core/minimum-hull/core-incident family."
+    }
+  ],
+  "first_open_lemma": "GLOBAL-EXCHANGE at a hypothetical positive global frame optimum, in particular a genuine distinct-two-port exterior-chain exchange with gain exceeding all new geometric costs.",
+  "formal_source": null,
+  "not_claimed": [
+    "Universal improving endpoint existence",
+    "All shortest chains fail",
+    "A root counterexample",
+    "The fixture is globally frame-optimal",
+    "A bound on global improving support size",
+    "A mathematical admission receipt"
+  ],
+  "root": "Every finite simple subcubic graph has a proper edge coloring using at most six colors without bichromatic ordinary four-edge paths or four-cycles.",
+  "root_closed": false,
+  "schema_version": "c27-statements-1",
+  "trusted_receipt": null,
+  "verdict": "candidate_only"
+}

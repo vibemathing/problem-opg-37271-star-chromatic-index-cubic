@@ -1,0 +1,63 @@
+{
+  "A_relabelings": 24,
+  "S_endpoints": 10,
+  "T_endpoints": 16,
+  "all_absorption_supports": 119,
+  "best_verified_result": "none",
+  "certificate_sha256": "837c1a38ec3208e91e3b55b07a0ef68d408aaefa103978883ec2348536afb5ec",
+  "chain_validation": {
+    "alternative_hull_edges": 8,
+    "exterior_only_two_port_hypothesis": false,
+    "selected_hull_edges": 6,
+    "shortest_core_incident_chains": 2,
+    "shortest_core_rows": 1
+  },
+  "cut_phase_systems": 4096,
+  "global_exchange": "open",
+  "limitations": "All finite replay is in the generator domain. Core-incident one-port chain fixture is not a two-distinct-port exterior-only chain and not a positive global-frame minimum.",
+  "mutations": [
+    "wrong_shortest_chain_hull",
+    "missing_actual_chain_support",
+    "missing_endpoint",
+    "wrong_minimum",
+    "wrong_envelope",
+    "missing_phase",
+    "wrong_U_path",
+    "false_cost",
+    "repeated_vertex",
+    "palette_crossing",
+    "U_length_four",
+    "omit_new_h",
+    "omit_new_shape",
+    "ignore_port_slack",
+    "only_old_minimizing_ports",
+    "all_U_inside_implies_balanced",
+    "omit_U_middle_edge",
+    "omit_C4_distinguished",
+    "delete_self_row_distinguished",
+    "deduplicate_support_distinguished",
+    "pretend_legal_single_edit_05",
+    "pretend_legal_single_edit_25"
+  ],
+  "small_coverage": [
+    {
+      "core_attainers": 24,
+      "frames": 69,
+      "n": 4,
+      "phases": 156
+    },
+    {
+      "core_attainers": 720,
+      "frames": 1260,
+      "n": 6,
+      "phases": 5040
+    },
+    {
+      "core_attainers": 624,
+      "frames": 1122,
+      "n": 6,
+      "phases": 4464
+    }
+  ],
+  "verdict": "candidate_only"
+}

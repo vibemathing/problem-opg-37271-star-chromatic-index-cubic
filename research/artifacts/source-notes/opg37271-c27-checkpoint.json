@@ -1,0 +1,72 @@
+{
+  "base_revision": "2ed5df4473ff0bfa71c2b37393b5d044451d5ce4",
+  "best_candidate": "Absorption ceiling/signed separator price and the complete minimum-hull core-incident endpoint obstruction with a size7 joint repair.",
+  "best_verified_result": "none",
+  "branch": "web/attempt-web-20260906-opg37271-a01-c27-chain-20260908",
+  "c26_transport": {
+    "checkpoint_comment": 5584954090,
+    "diff": 102050796986,
+    "head": "8e0e2d1de7d73943199d897fde52a6fb5d89c85b",
+    "merge": "2ed5df4473ff0bfa71c2b37393b5d044451d5ce4",
+    "packet": 102050797350,
+    "pr": 39,
+    "snapshot": 102050797265,
+    "workflow": 34223151659
+  },
+  "c27_transport": "Branch created; snapshot checkpoint precedes candidate commits. Final commit/PR/check/merge receipts belong in Issue6.",
+  "checks": [],
+  "excluded_route": "Unconditional minimum-hull shortest core-incident absorption with all old U variables internal as a terminal balance test.",
+  "files": [
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-admission-request.json",
+      "sha256": "d09edc75b1ec74487e92ab06c0cf07cb4fdf8c06006f29c4af8ecd3a26bcb1b0"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-certificate.json",
+      "sha256": "7e659ef6a661fe482d6dc367cb1bfce8bec1e158fe17875fa29b85fbc54623e8"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-check-result.json",
+      "sha256": "0c5506a1469f8868872b705aaebcff02a28d494bed3f07eabbf0853810b3d5dd"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-check.py",
+      "sha256": "45f08793e43c76e4adc7fc0418558d188be7cbd402d6609f884fe4037a1f2d0b"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-execution.json",
+      "sha256": "38a1a08f50f5a5eca7df5934b6cd8392dd278811ba61b37659a87d7207d139fd"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-input.json",
+      "sha256": "6a92df4e149751b2f72cece0fd55a304b857fe7595a43f7bac3fc2a5c07d9dfb"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-produce.py",
+      "sha256": "f1f5fd6c78466bd068e56447843c6e21259341b4668952088af0090bd3c1da79"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-proof.md",
+      "sha256": "37d04c9008ef7eb00df47543aead08239fc8111275a27ab302364c2da03aac1f"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-run.py",
+      "sha256": "940eb01a96d2f3671942b6743522633f116ee1f807aed72b4d3873e669a45e7b"
+    },
+    {
+      "path": "research/artifacts/candidates/opg37271-c27-statement.json",
+      "sha256": "e21ea543433827ece0c659a64ead510bd90d44beeee18780ec9ed6b8662c2c89"
+    }
+  ],
+  "first_open_lemma": "A genuine distinct-two-port exterior-chain/global-endpoint improving construction at a hypothetical positive global frame optimum.",
+  "head": null,
+  "input_main": "bf3b3306434831fd5300670fb6a2de92914787f2",
+  "issue": 6,
+  "merge": null,
+  "next_action": "Analyze the actual signed separator price and newly mutable D constraints for genuine two-port chain absorption; do not infer endpoint existence from path connectivity or a vanishing unabsorbed-variable count.",
+  "pr": null,
+  "root_closed": false,
+  "schema_version": "c27-checkpoint-1",
+  "state": "NONTERMINAL_CHECKPOINT",
+  "verdict": "candidate_only"
+}
