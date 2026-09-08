@@ -1,0 +1,16 @@
+{
+  "best_verified_result": "none",
+  "claims": {
+    "ENUM10": "All D/U partitions with U components of lengths1..3 (empty U and uncovered vertices allowed), all star D-colorings in A={1,2,3,4} modulo global A renaming, and every B={5,6} phase are enumerated for all order-ten connected cubic types.",
+    "G10": "Every connected simple cubic graph on exactly ten vertices has a star edge coloring in {1,2,3,4,5,6} whose 5/6 subgraph spans all vertices and has components of one or two edges. This is a finite theorem candidate with exhaustive graph coverage and explicit colorings.",
+    "MATCH": "For the graph18 edge table in graphs10.json, no choice among its six perfect matchings U and no star A-coloring of the complement admits a B completion. This is a restriction failure, not a root counterexample.",
+    "POINTED": "For a globally minimizing preframe and a globally minimizing phase, inside phases minimize sigma_F at their boundary bstar. An endpoint exchange with strictly smaller sigma at bstar contradicts global minimality, even without domination at other boundaries.",
+    "PROFILE": "Let F,Fprime be valid preframes identical outside an edge patch S, with S U-closed for both. Let sigma_F(b) minimize the number of forbidden actual four-edge shapes meeting S over inside phases for each exterior boundary phase b. If integer delta>=1 and sigma_Fprime(b)<=sigma_F(b)-delta for every b, then mu(Fprime)<=mu(F)-delta. No interpolation premise is required."
+  },
+  "domain": "Finite simple undirected graphs; star means proper with no bichromatic four-edge simple path or four-cycle. Paths need not be induced.",
+  "limits": "Finite order-ten coverage is not induction to arbitrary order. Matching-only U, local greedy descent and universal nonincreasing-SCC escape are not positive routes here.",
+  "open_global_lemma": "From a hypothetical positive GLOBAL minimum on an arbitrary connected simple cubic graph, construct a graph-realized joint exchange with a profile improvement at an attaining boundary, or a different strictly improving global construction. No universal availability, patch-size or barrier bound is supplied.",
+  "root_closed": false,
+  "schema_version": "c25-fixed-statements-1",
+  "verdict": "candidate_only"
+}

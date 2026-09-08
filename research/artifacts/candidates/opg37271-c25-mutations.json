@@ -1,0 +1,135 @@
+{
+  "A_orbit_rechecks": 24,
+  "count": 22,
+  "input_sha256": "65be3958cb99bda0bc35d1a69e5196703756ba1edc867d22aaee0434fef05c27",
+  "mutations": [
+    {
+      "name": "missing_graph",
+      "reason": "orbit total vs independent degree DP",
+      "test_result": "rejected"
+    },
+    {
+      "name": "duplicate_graph",
+      "reason": "duplicate graph orbit",
+      "test_result": "rejected"
+    },
+    {
+      "name": "wrong_automorphism_count",
+      "reason": "automorphism count",
+      "test_result": "rejected"
+    },
+    {
+      "name": "wrong_connected_count",
+      "reason": "orbit total vs independent degree DP",
+      "test_result": "rejected"
+    },
+    {
+      "name": "duplicate_edge",
+      "reason": "simple edges",
+      "test_result": "rejected"
+    },
+    {
+      "name": "loop_edge",
+      "reason": "endpoints",
+      "test_result": "rejected"
+    },
+    {
+      "name": "degree_four",
+      "reason": "subcubic",
+      "test_result": "rejected"
+    },
+    {
+      "name": "D_palette_crossing",
+      "reason": "A palette",
+      "test_result": "rejected"
+    },
+    {
+      "name": "U_length_four",
+      "reason": "U short paths",
+      "test_result": "rejected"
+    },
+    {
+      "name": "nonstar_D",
+      "reason": "D star",
+      "test_result": "rejected"
+    },
+    {
+      "name": "U_cycle",
+      "reason": "U short paths",
+      "test_result": "rejected"
+    },
+    {
+      "actual_forbidden": 1,
+      "name": "omit_four_cycle",
+      "paths_only": 0,
+      "test_result": "distinguished"
+    },
+    {
+      "name": "full_palette_seven",
+      "reason": "full palette",
+      "test_result": "rejected"
+    },
+    {
+      "name": "incident_same_color",
+      "reason": "full proper",
+      "test_result": "rejected"
+    },
+    {
+      "name": "out_of_range_phase",
+      "reason": "phase range",
+      "test_result": "rejected"
+    },
+    {
+      "name": "omit_U_component_edge",
+      "reason": "U-closed patch",
+      "test_result": "rejected"
+    },
+    {
+      "name": "hide_changed_outside_edge",
+      "reason": "outside fixed",
+      "test_result": "rejected"
+    },
+    {
+      "name": "false_strict_profile_claim",
+      "reason": "strict profile gap",
+      "test_result": "rejected"
+    },
+    {
+      "name": "drop_boundary_assignment",
+      "reason": "boundary coverage",
+      "test_result": "rejected"
+    },
+    {
+      "name": "non_simple_witness",
+      "reason": "distinct vertices",
+      "test_result": "rejected"
+    },
+    {
+      "correct_A_orbit_rechecks": 24,
+      "name": "quotient_over_zero",
+      "test_result": "distinguished",
+      "zero_is_not_an_A_color": true
+    },
+    {
+      "invalid_first_moves": [
+        {
+          "edit": [
+            1,
+            4
+          ],
+          "reason": "D star"
+        },
+        {
+          "edit": [
+            4,
+            0
+          ],
+          "reason": "U short paths"
+        }
+      ],
+      "name": "assume_valid_single_edge_interpolation",
+      "test_result": "distinguished"
+    }
+  ],
+  "verdict": "candidate_only"
+}
