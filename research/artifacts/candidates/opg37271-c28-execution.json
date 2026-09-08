@@ -1,0 +1,74 @@
+{
+  "best_verified_result": "none",
+  "completed": true,
+  "ended_at": "2026-09-08T23:07:17.956284+00:00",
+  "files_sha256": {
+    "opg37271-c28-certificate-binding.json": "d4e623d1c2c409af5942e425d6e6effd83fa6d572102ab77620b38b738abf326",
+    "opg37271-c28-certificate.json": "0daae46ecaf220e14841e0aa724da0fb0f71401645eb6d8d91c217c9a01cbc56",
+    "opg37271-c28-check-result.json": "bca58ec4678e6c7b966cef1942fc08029eedb641aebfb4d28e69ae6fbcd7d8a5",
+    "opg37271-c28-input.json": "9d73daf8578910cf3b9fc30a885d712d6768d0e7213e0877dbc9218710c75903"
+  },
+  "input_revision": "69b475b0ce24540775d0f0149d446212415146b0",
+  "interpreter": {
+    "binary_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+    "implementation": "CPython",
+    "version": "3.13.5"
+  },
+  "limits": {
+    "cpu_hard_seconds": 31,
+    "cpu_soft_seconds": 30,
+    "file_bytes": 1048576,
+    "memory_bytes": 805306368,
+    "stderr_bytes": 16384,
+    "stdout_bytes": 65536,
+    "threads": 1,
+    "wall_seconds": 35
+  },
+  "schema_version": "c28-execution-1",
+  "scope": "Exact ten-vertex interface; complete stated endpoint families and all phases; exhaustive exact-pattern realizability below ten. No repeated ten-vertex full-frame census or trusted mathematical workflow.",
+  "source_sha256": {
+    "opg37271-c28-check.py": "613b9d3824534481234c90ce33191e860d3e3213539626c43e70accbf2c6a6ea",
+    "opg37271-c28-produce.py": "aeb9f7f26e57e96e4ff40fb578a97ac641dd7b2ef06f55a63762783330191ad1",
+    "opg37271-c28-run.py": "4c0e8b572f8ef54fac07e82c58ad784336c374547a81cf7ca3b50d0bec1cf14f"
+  },
+  "sources_unchanged": true,
+  "stages": [
+    {
+      "command": [
+        "python3",
+        "research/artifacts/candidates/opg37271-c28-produce.py"
+      ],
+      "elapsed_seconds": 1.019936,
+      "ended_at": "2026-09-08T23:07:16.283234+00:00",
+      "exit_code": 0,
+      "output_limit_exceeded": false,
+      "stage": "produce",
+      "started_at": "2026-09-08T23:07:15.263324+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 257,
+      "stdout_sha256": "7d943468058214d1415a7731dcf1c320a92563141faa17476ed1bdee1e8a6977",
+      "timed_out": false
+    },
+    {
+      "command": [
+        "python3",
+        "research/artifacts/candidates/opg37271-c28-check.py"
+      ],
+      "elapsed_seconds": 1.672521,
+      "ended_at": "2026-09-08T23:07:17.956031+00:00",
+      "exit_code": 0,
+      "output_limit_exceeded": false,
+      "stage": "check",
+      "started_at": "2026-09-08T23:07:16.283532+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 1099,
+      "stdout_sha256": "b811f59c93313b3e9ca83c2450035f6e5276003a827a0ccfb4f22f48a88a16de",
+      "timed_out": false
+    }
+  ],
+  "started_at": "2026-09-08T23:07:15.263250+00:00",
+  "trusted_execution": false,
+  "verdict": "candidate_only"
+}
