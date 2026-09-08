@@ -1,0 +1,53 @@
+{
+  "best_verified_result": "none",
+  "command": [
+    "python3",
+    "research/artifacts/candidates/opg37271-c27-direct-audit.py"
+  ],
+  "completed": true,
+  "elapsed_seconds": 1.371222,
+  "ended_at": "2026-09-08T13:01:54.015710+00:00",
+  "exit_code": 0,
+  "input_revision": "ae10c3584208290e30e2e6cdafa584f3b89c17e5",
+  "interpreter": {
+    "binary_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+    "implementation": "CPython",
+    "version": "3.13.5"
+  },
+  "limits": {
+    "cpu_hard_seconds": 31,
+    "cpu_soft_seconds": 30,
+    "file_bytes": 1048576,
+    "memory_bytes": 805306368,
+    "stderr_bytes": 16384,
+    "stdout_bytes": 16384,
+    "threads": 1,
+    "wall_seconds": 35
+  },
+  "output_limit_exceeded": false,
+  "preliminary_diagnostics": [
+    "A proposed nonzero-h control endpoint failed the D-star premise before acceptance; replaced with a literally enumerated valid endpoint. No failed control is used as a mathematical counterexample."
+  ],
+  "result_sha256": "e00525e6ec1d696292d702908a5bbafdd8e91dd45cec7ae9d515e5910602e525",
+  "schema_version": "c27-direct-execution-1",
+  "scope": "Self-contained C27 10/16 endpoint replay and five one-edge supersets, C26 literal profile interface, actual nonzero-h control, abstract cut-only countermodel. No C26 core imported, no new all-cubic census or trusted gate.",
+  "source_sha256": {
+    "opg37271-c27-direct-audit.py": "95df616a5b03445410d58fe3c4c45a84d3f6a10b95b6eb3b3f45041246037a45",
+    "opg37271-c27-direct-run.py": "0852012c229f375293a89381f7fde76f343f9983dd58930b31ac6c6f30c17af7"
+  },
+  "sources_unchanged": true,
+  "started_at": "2026-09-08T13:01:52.644506+00:00",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 144,
+  "stdout_sha256": "44bb036c66d57f01dd93508dfad29630291ace45b389a3eaf636a5cb35fce65c",
+  "summary": {
+    "T_endpoints": 16,
+    "mutations": 18,
+    "sha256": "e00525e6ec1d696292d702908a5bbafdd8e91dd45cec7ae9d515e5910602e525",
+    "verdict": "candidate_only"
+  },
+  "timed_out": false,
+  "trusted_execution": false,
+  "verdict": "candidate_only"
+}
