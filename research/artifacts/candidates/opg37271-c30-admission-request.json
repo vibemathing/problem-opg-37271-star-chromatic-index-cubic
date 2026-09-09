@@ -1,0 +1,32 @@
+{
+  "axiom_escape_audit_receipt": null,
+  "best_verified_result": "none",
+  "closure_receipt": null,
+  "does_not_close_root": true,
+  "finite_statement": "For the exact ten-vertex input, no connected jointly U-closed support of size<=2 improves at an old attaining phase; size3 has exactly four improving endpoints across17 supports. Minimum counts SUPPORT size, not changed entries.",
+  "formal_source": null,
+  "generator_domain_only": true,
+  "local_statement": "For every finite simple subcubic graph and legal preframe extending the exact thirteen-edge C30 colored motif on vertices0..8, simultaneously setting03=4,38=1,78=2 and leaving all other colors fixed gives a legal preframe; for every old alternating B coloring, its restriction to the unchanged U components has at least one fewer actual bichromatic four-edge simple path/C4.",
+  "missing_gate": "Exact local admitted statement and faithful formal source, an authorized allowlisted mathematical execution and separate semantic/axiom audits are absent. Current candidate transport checks do not supply these. No workflow dispatch or truth-record write is performed.",
+  "premises": [
+    "Exact graph/edge colors of the C30 input on0..8 (edge69 is not part of the required motif).",
+    "Vertex names denote distinct vertices; all unspecified surrounding edges are retained.",
+    "Maximum degree3, D-star with A=1..4; U vertex-disjoint paths of lengths1..3, B=5,6.",
+    "Additional edge at6 may be A or U; if U the full old component is still required to have length<=3."
+  ],
+  "proof_locator": "research/artifacts/candidates/opg37271-c30-proof.md",
+  "proof_sha256": "2883a0675111d6aa81e7bc2b316b270536e592564567bbb3c265e51acb5abfa6",
+  "replay_command": [
+    "python3",
+    "research/artifacts/candidates/opg37271-c30-run.py"
+  ],
+  "requested_capabilities": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "statement_faithfulness_receipt": null,
+  "transport_obligation": "obligation:opg37271-root",
+  "trusted_run": null,
+  "verdict": "candidate_only"
+}

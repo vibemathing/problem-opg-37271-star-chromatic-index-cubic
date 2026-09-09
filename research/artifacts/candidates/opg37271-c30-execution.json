@@ -1,0 +1,77 @@
+{
+  "best_verified_result": "none",
+  "completed": true,
+  "ended_at": "2026-09-09T03:52:17.203408+00:00",
+  "files_sha256": {
+    "opg37271-c30-certificate.json": "c70defc68e98c103d57d9974d01036a3f5c9ec141708e7ae27d9a78fc35f2788",
+    "opg37271-c30-check-result.json": "8adddf3b7e85a48057e2098f47ac56e3d1eee22757b553547ad6fd9f5621b631",
+    "opg37271-c30-minimum-tables.txt": "2a6f72839a6ecd4e0ec75ca6340149b9a09e7312c515509894e5e37b3a77e1d0",
+    "opg37271-c30-summary.json": "278ea378a788b6bcc4d56cd77e04041955e4e022fd04c05a31050bc1466d958a"
+  },
+  "input_revision": "3ee4c60c3feb274e60b9a54e430c2d135f77fed8",
+  "interpreter": {
+    "binary_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+    "implementation": "CPython",
+    "version": "3.13.5"
+  },
+  "limits": {
+    "cpu_hard_seconds": 31,
+    "cpu_soft_seconds": 30,
+    "file_bytes": 1048576,
+    "memory_bytes": 805306368,
+    "stderr_bytes": 16384,
+    "stdout_bytes": 65536,
+    "threads": 1,
+    "wall_seconds": 35
+  },
+  "preliminary_diagnostics": [
+    "A syntax typo in a preliminary checker version was corrected before the final source-frozen replay. No failed run is counted as a successful check."
+  ],
+  "scope": "Fixed C30 embedding; all closed supports size1..3, two core families,125 passive inputs,pointwise completion controls. No all-ten-vertex census or trusted gate.",
+  "source_sha256": {
+    "opg37271-c30-check.py": "175d150812137020192b508f4bbc5d551ef1daed3b2555595cedddc4d3666c2c",
+    "opg37271-c30-input.json": "393a44845e43b4f398fc90d80d232debc92b94109a4a5baf8994d59041cc8c3d",
+    "opg37271-c30-produce.py": "3e24b92f0e97914dac94875efcf5a4ac3fa93e73c8faaf8722b8c50e7616e535",
+    "opg37271-c30-run.py": "482ed693cdcf976a8555e896dff4edba73ebf05fe76c0d1e4efcdb7e11614f2d"
+  },
+  "sources_unchanged": true,
+  "stages": [
+    {
+      "command": [
+        "python3",
+        "research/artifacts/candidates/opg37271-c30-produce.py"
+      ],
+      "elapsed_seconds": 1.144697,
+      "ended_at": "2026-09-09T03:52:06.129944+00:00",
+      "exit_code": 0,
+      "name": "produce",
+      "output_limit_exceeded": false,
+      "started_at": "2026-09-09T03:52:04.985267+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 2630,
+      "stdout_sha256": "b996e9188476158677b30321f75e4da9b472788a41dd91305f3436a230a72b4b",
+      "timed_out": false
+    },
+    {
+      "command": [
+        "python3",
+        "research/artifacts/candidates/opg37271-c30-check.py"
+      ],
+      "elapsed_seconds": 11.073012,
+      "ended_at": "2026-09-09T03:52:17.203086+00:00",
+      "exit_code": 0,
+      "name": "check",
+      "output_limit_exceeded": false,
+      "started_at": "2026-09-09T03:52:06.130095+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 995,
+      "stdout_sha256": "979ea16d4f319201b7711eede431b3b88b4195b2f056c2851d1aa855b664b6dd",
+      "timed_out": false
+    }
+  ],
+  "started_at": "2026-09-09T03:52:04.985244+00:00",
+  "trusted_execution": false,
+  "verdict": "candidate_only"
+}

@@ -1,0 +1,9 @@
+{
+  "full_certificate_bytes": 272169,
+  "full_certificate_sha256": "c70defc68e98c103d57d9974d01036a3f5c9ec141708e7ae27d9a78fc35f2788",
+  "full_certificate_status": "Generated replay output; archived, not claimed to be a main file. All source and input required for regeneration are candidate files.",
+  "input_sha256": "393a44845e43b4f398fc90d80d232debc92b94109a4a5baf8994d59041cc8c3d",
+  "minimum_table_sha256": "2a6f72839a6ecd4e0ec75ca6340149b9a09e7312c515509894e5e37b3a77e1d0",
+  "minimum_table_status": "Complete all-endpoint/all-phase actual witness certificate for ALL37 connected jointly-closed supports of sizes1..3. Input and geometry headers define its literal numeric encoding.",
+  "verdict": "candidate_only"
+}
