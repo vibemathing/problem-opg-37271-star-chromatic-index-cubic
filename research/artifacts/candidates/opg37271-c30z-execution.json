@@ -1,0 +1,65 @@
+{
+  "all_D_star_colorings": 1522,
+  "all_profiles_checked": true,
+  "all_sources_unchanged": true,
+  "best_verified_result": "none",
+  "boundary_tests": 12,
+  "eligible_frames": 256,
+  "interpreter_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+  "limits": {
+    "address_space_bytes": 805306368,
+    "cpu_seconds": [
+      30,
+      31
+    ],
+    "file_bytes": 1048576,
+    "stderr_bytes": 16384,
+    "stdout_bytes": 65536,
+    "threads": 1,
+    "wall_seconds": 35
+  },
+  "python": "3.13.5",
+  "result_bytes": 204116,
+  "result_sha256": "01fda2515a9aeda6f3e31d67e2a2a5bca4ea8a7cbbac0b77c1164749805eb63f",
+  "root_closed": false,
+  "source_sha256": {
+    "opg37271-c30x-produce.py": "a7f02ae72f62585356fedd3a93d49d01726083c690900f5d4e90d2302c49a1d9",
+    "opg37271-c30z-check.py": "079285d89ea252efda550025d62d6f374b051d8d18bc26cf20124a3f6f4e4e66",
+    "opg37271-c30z-produce.py": "dce9a7182510f22d9cb7b70e570e23fc8f4d91a2556946681571b272449795ac",
+    "opg37271-c30z-run.py": "cef885973a18237f5cdfa82d1a674bf06c967338c3ee48a3c3d285bff4cf125f"
+  },
+  "stages": [
+    {
+      "elapsed_seconds": 1.4821848560000035,
+      "ended_at": "2026-09-09T09:33:20.707834+00:00",
+      "exit_code": 0,
+      "limit_event": null,
+      "script": "opg37271-c30z-produce.py",
+      "started_at": "2026-09-09T09:33:19.225663+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 325,
+      "stdout_sha256": "ca32fe8adce1600c806a948ac91df6a77c444138e592160f848bd4d224ef20ea"
+    },
+    {
+      "elapsed_seconds": 1.774866946999964,
+      "ended_at": "2026-09-09T09:33:22.482322+00:00",
+      "exit_code": 0,
+      "limit_event": null,
+      "script": "opg37271-c30z-check.py",
+      "started_at": "2026-09-09T09:33:20.708121+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 286,
+      "stdout_sha256": "167b1bf18879f02b2f3024924a4f981f8e7f2ba9d2b0a29aece0709a98baa404"
+    }
+  ],
+  "trusted_execution": false,
+  "verdict": "candidate_only",
+  "widths": {
+    "1": 159,
+    "2": 91,
+    "3": 6
+  },
+  "word_width_sha256": "663a1aa3793fb3cc1b65de5638208cff0238389bc01353f12b0bb1156c9116a5"
+}
