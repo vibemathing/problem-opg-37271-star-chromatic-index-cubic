@@ -1,0 +1,38 @@
+{
+  "axiom_escape_audit": null,
+  "candidate_proof": {
+    "path": "research/artifacts/candidates/opg37271-c24-proof.md",
+    "sha256": "9caedc9e8ea10e5a34eb83444fffdb7f86e17883f6607db20357d90147f3955c"
+  },
+  "closure_gate_receipt": null,
+  "exact_statement": {
+    "path": "research/artifacts/candidates/opg37271-c24-statement.json",
+    "sha256": "8c4aafefa6880f327f1db3e68f4fa2134d424b142316a94d47e849fb9e2a3c1b"
+  },
+  "executable_candidate_replay": [
+    "python3",
+    "research/artifacts/candidates/opg37271-c24-run.py",
+    "--output",
+    "c24-replay"
+  ],
+  "formal_source": null,
+  "input_revision": "b66703bd76d56f0791ad58542ec8bc7d3b8ee35b",
+  "kind": "admission_request",
+  "matching_local_obligation": null,
+  "missing_gates": [
+    "Exact EXIT-counterexample statement and matching candidate registration in trusted obligation state",
+    "Faithful finite graph/edit-domain/phase formalization",
+    "Actual admitted verifier toolchain fingerprint and allowed mathematical execution entry",
+    "Separate semantic-faithfulness and axiom/escape reviews",
+    "Root OUTER remains mathematically open and cannot be closed by this local negative result"
+  ],
+  "registered_adapter": "scripts/verify_lean_obligation.py",
+  "registered_adapter_request": null,
+  "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+  "schema_version": "candidate-admission-request-1",
+  "toolchain_allowlist_receipt": null,
+  "transport_obligation": "obligation:opg37271-root",
+  "trusted_workflow": null,
+  "truth_writes": false,
+  "verdict": "candidate_only"
+}

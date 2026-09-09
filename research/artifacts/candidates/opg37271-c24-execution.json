@@ -1,0 +1,459 @@
+{
+  "axiom_escape_audit": null,
+  "compiled_program_sha256": "977dac6240864e9a9e648ca7d33336adf279e80a0f63c181a1b8a2d194a994f5",
+  "compiler_binary_sha256": "6b3696e4dcb85e1c949c732a02befa50e3983ecf94ce7e8e58d9d503b954b79d",
+  "compiler_version": "g++ (Debian 14.2.0-19) 14.2.0",
+  "input_revision": "b66703bd76d56f0791ad58542ec8bc7d3b8ee35b",
+  "interpreter": "3.13.5",
+  "interpreter_binary_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+  "limits": {
+    "children_sequential": true,
+    "cpu_hard_seconds": 36,
+    "cpu_soft_seconds": 35,
+    "file_output_bytes": 5242880,
+    "memory_mib": 768,
+    "stderr_bytes": 16384,
+    "threads_per_child": 1,
+    "wall_seconds_per_child": 40
+  },
+  "outputs": {
+    "opg37271-c24-catalog.json": "2e6a3b357064718d6d97893ffca3944bea9f243946959e4294b932f4a5cfba53",
+    "opg37271-c24-certificate.json": "cb3bef0ba09b370385b794d6654666598cec9e0999fa62d58e7880443cf23904",
+    "opg37271-c24-summary.json": "990b9eb142ff21dc0f988a3913ab9365a14516cb580c870883064597cbb34d32"
+  },
+  "sources": {
+    "opg37271-c24-audit.py": "8ad3edb3853f55f0873f7ca7fe57e1da916c73b85d958b66e9ef98d85b4d42a3",
+    "opg37271-c24-catalog.py": "2092e032c2d9f088a2f22420e2c12a8dde08a6200666599dfc6ae61455219b2a",
+    "opg37271-c24-check.py": "a08392a8d9ed6cd37c2945f9c68c0c8e8356bdf4f8a861e5bc746cb4d9420ef0",
+    "opg37271-c24-run.py": "b53284612b9810eac8784ea533d8b0bb78801970e6d3dd1c13a1d2d9e7e0f3d1",
+    "opg37271-c24-space.cpp": "01f8ee7d1fc130cc2da9a9ce9b7e33daf1b647cc097f3eed24f2f2eb4b5021fd"
+  },
+  "stages": [
+    {
+      "argv": [
+        "g++",
+        "--version"
+      ],
+      "elapsed": 0.014413,
+      "ended": "2026-09-07T16:27:39.967255+00:00",
+      "exit_code": 0,
+      "inputs": {},
+      "stage": "compiler-version",
+      "started": "2026-09-07T16:27:39.952840+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 232,
+      "stdout_sha256": "5f6798e87440f1e8b88bf6822c33bebe434f83374640a7f8ba967902ee1ea098",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "python",
+        "opg37271-c24-catalog.py"
+      ],
+      "elapsed": 2.474002,
+      "ended": "2026-09-07T16:27:42.441842+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "opg37271-c24-catalog.py": "2092e032c2d9f088a2f22420e2c12a8dde08a6200666599dfc6ae61455219b2a"
+      },
+      "stage": "catalog",
+      "started": "2026-09-07T16:27:39.967857+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 26,
+      "stdout_sha256": "399412823a7f91f3c3cc41e98df91727f9b301399b80674448e389ba106d5a13",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "g++",
+        "-O2",
+        "-std=c++20",
+        "opg37271-c24-space.cpp",
+        "-o",
+        "c24-space"
+      ],
+      "elapsed": 2.328163,
+      "ended": "2026-09-07T16:27:44.770725+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "opg37271-c24-space.cpp": "01f8ee7d1fc130cc2da9a9ce9b7e33daf1b647cc097f3eed24f2f2eb4b5021fd"
+      },
+      "stage": "build",
+      "started": "2026-09-07T16:27:42.442625+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "c24-space",
+        "n4-g0.txt",
+        "n4-g0"
+      ],
+      "elapsed": 0.013447,
+      "ended": "2026-09-07T16:27:44.784832+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "n4-g0.txt": "9c3528d98663acb8787c1f08381b6591c46b657d1c4c0061ae09a1e908653f00",
+        "opg37271-c24-space.cpp": "01f8ee7d1fc130cc2da9a9ce9b7e33daf1b647cc097f3eed24f2f2eb4b5021fd"
+      },
+      "stage": "space-n4-g0",
+      "started": "2026-09-07T16:27:44.771391+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 211,
+      "stdout_sha256": "35a5a59381ac02983b6af6793d42cc479b30691b07abe811f7951347bb9baaf3",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "python",
+        "opg37271-c24-check.py",
+        "n4-g0"
+      ],
+      "elapsed": 1.0229,
+      "ended": "2026-09-07T16:27:45.808119+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "n4-g0.states": "1456cc91552bdb2a78a03a5216ee42e21e6ce0e26e825535fa9cae85467e68da",
+        "n4-g0.txt": "9c3528d98663acb8787c1f08381b6591c46b657d1c4c0061ae09a1e908653f00",
+        "opg37271-c24-check.py": "a08392a8d9ed6cd37c2945f9c68c0c8e8356bdf4f8a861e5bc746cb4d9420ef0"
+      },
+      "stage": "check-n4-g0",
+      "started": "2026-09-07T16:27:44.785316+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 399,
+      "stdout_sha256": "8a12bb8810341c180e342ff83c586cfae347f9be8a7b24d0892d00936bc68de5",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "c24-space",
+        "n6-g0.txt",
+        "n6-g0"
+      ],
+      "elapsed": 0.037708,
+      "ended": "2026-09-07T16:27:45.847289+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "n6-g0.txt": "9a284a5e744ae611c025ac089189635aa9196f595bc341ee92cb82942bd5a24a",
+        "opg37271-c24-space.cpp": "01f8ee7d1fc130cc2da9a9ce9b7e33daf1b647cc097f3eed24f2f2eb4b5021fd"
+      },
+      "stage": "space-n6-g0",
+      "started": "2026-09-07T16:27:45.809582+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 242,
+      "stdout_sha256": "824d7a41f71ac06c053ee1aa8c9884ef4450099f986f0955702e1f5e2f0b6332",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "python",
+        "opg37271-c24-check.py",
+        "n6-g0"
+      ],
+      "elapsed": 1.395815,
+      "ended": "2026-09-07T16:27:47.243611+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "n6-g0.states": "914ac3ee83970e61df94a7f03b0976d1ec758d1e07faeb7aef42a229592b1839",
+        "n6-g0.txt": "9a284a5e744ae611c025ac089189635aa9196f595bc341ee92cb82942bd5a24a",
+        "opg37271-c24-check.py": "a08392a8d9ed6cd37c2945f9c68c0c8e8356bdf4f8a861e5bc746cb4d9420ef0"
+      },
+      "stage": "check-n6-g0",
+      "started": "2026-09-07T16:27:45.847814+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 436,
+      "stdout_sha256": "d0b1969083da40d3a2ad21c1e97bd8fd3373d2661798e7f8aa68378d3ab4cb4f",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "c24-space",
+        "n6-g1.txt",
+        "n6-g1"
+      ],
+      "elapsed": 0.021298,
+      "ended": "2026-09-07T16:27:47.266370+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "n6-g1.txt": "ccbecd2f0aae9d83e634e50c97849c91b81f520ba5099cee1c9c7bbac06ea23a",
+        "opg37271-c24-space.cpp": "01f8ee7d1fc130cc2da9a9ce9b7e33daf1b647cc097f3eed24f2f2eb4b5021fd"
+      },
+      "stage": "space-n6-g1",
+      "started": "2026-09-07T16:27:47.245076+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 235,
+      "stdout_sha256": "c67504cd0b3a0f838f473b90147df5bb16ffa29112bb0cee5cf7f8db7a3f06ba",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "python",
+        "opg37271-c24-check.py",
+        "n6-g1"
+      ],
+      "elapsed": 1.020664,
+      "ended": "2026-09-07T16:27:48.287537+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "n6-g1.states": "7301ba70c947e0e6ef4a72efc4c841295915cb81461a50aa24601d929e20aa76",
+        "n6-g1.txt": "ccbecd2f0aae9d83e634e50c97849c91b81f520ba5099cee1c9c7bbac06ea23a",
+        "opg37271-c24-check.py": "a08392a8d9ed6cd37c2945f9c68c0c8e8356bdf4f8a861e5bc746cb4d9420ef0"
+      },
+      "stage": "check-n6-g1",
+      "started": "2026-09-07T16:27:47.266897+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 427,
+      "stdout_sha256": "cdfdd4772a1e3f0a3bc533daa4be7197e19f7f72cbf5df7e3b5ef193d6b1c87d",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "c24-space",
+        "n8-g0.txt",
+        "n8-g0"
+      ],
+      "elapsed": 0.470807,
+      "ended": "2026-09-07T16:27:48.759823+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "n8-g0.txt": "2e9b824ec428301832d99aa44dc9f96393b4f2d860034c76fead5674c054ae4b",
+        "opg37271-c24-space.cpp": "01f8ee7d1fc130cc2da9a9ce9b7e33daf1b647cc097f3eed24f2f2eb4b5021fd"
+      },
+      "stage": "space-n8-g0",
+      "started": "2026-09-07T16:27:48.289025+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 280,
+      "stdout_sha256": "c3b5632ac7ab21d22749b494be770271645214c65d494327099e61d2cb7abbd0",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "python",
+        "opg37271-c24-check.py",
+        "n8-g0"
+      ],
+      "elapsed": 11.901842,
+      "ended": "2026-09-07T16:28:00.663925+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "n8-g0.states": "1de41b98b4937d9387adf4937da438c45c1c4b33a96d85bb38dfd29f3be35859",
+        "n8-g0.txt": "2e9b824ec428301832d99aa44dc9f96393b4f2d860034c76fead5674c054ae4b",
+        "opg37271-c24-check.py": "a08392a8d9ed6cd37c2945f9c68c0c8e8356bdf4f8a861e5bc746cb4d9420ef0"
+      },
+      "stage": "check-n8-g0",
+      "started": "2026-09-07T16:27:48.762092+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 480,
+      "stdout_sha256": "c7303ab638d3aff60ca854b1247f0f2c1d1171326329d07bc60dd38a857acdee",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "c24-space",
+        "n8-g1.txt",
+        "n8-g1"
+      ],
+      "elapsed": 0.586462,
+      "ended": "2026-09-07T16:28:01.254471+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "n8-g1.txt": "a2e9fc01365776117eb3f2fd9b8b7c55eca698bd8b2e17231cba3ef8f3772f60",
+        "opg37271-c24-space.cpp": "01f8ee7d1fc130cc2da9a9ce9b7e33daf1b647cc097f3eed24f2f2eb4b5021fd"
+      },
+      "stage": "space-n8-g1",
+      "started": "2026-09-07T16:28:00.668247+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 286,
+      "stdout_sha256": "3b1cff0f7030ea08ce0a791b32af3ac90fcffa4c042c7f8034410f19e01ca005",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "python",
+        "opg37271-c24-check.py",
+        "n8-g1"
+      ],
+      "elapsed": 8.773978,
+      "ended": "2026-09-07T16:28:10.037054+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "n8-g1.states": "353f492574565b9b6c5f89277fd2af7a6481571cff667f4c793b92f576920558",
+        "n8-g1.txt": "a2e9fc01365776117eb3f2fd9b8b7c55eca698bd8b2e17231cba3ef8f3772f60",
+        "opg37271-c24-check.py": "a08392a8d9ed6cd37c2945f9c68c0c8e8356bdf4f8a861e5bc746cb4d9420ef0"
+      },
+      "stage": "check-n8-g1",
+      "started": "2026-09-07T16:28:01.263049+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 488,
+      "stdout_sha256": "72eb04d6856e23b4e46018fc8d923a6cbd27fbcb53ec95d2f50dd8ecd193ff0f",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "c24-space",
+        "n8-g2.txt",
+        "n8-g2"
+      ],
+      "elapsed": 0.520325,
+      "ended": "2026-09-07T16:31:07.484451+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "n8-g2.txt": "9dc7a587f8454b5e2aeea2a217d6da295647c4ee591bcb9ccbbf9e4b9f02c34a",
+        "opg37271-c24-space.cpp": "01f8ee7d1fc130cc2da9a9ce9b7e33daf1b647cc097f3eed24f2f2eb4b5021fd"
+      },
+      "stage": "space-n8-g2",
+      "started": "2026-09-07T16:31:06.964110+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 282,
+      "stdout_sha256": "c98129cb051a86d407b072c47403890c8f08fddb662507ed63a398922d555ec1",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "python3",
+        "opg37271-c24-check.py",
+        "n8-g2"
+      ],
+      "elapsed": 9.252467,
+      "ended": "2026-09-07T16:31:16.738632+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "n8-g2.states": "1e9e1fd63d00d4c3c83c9480a74dce6d9f8f02579461553268adf50b2aa596d1",
+        "n8-g2.txt": "9dc7a587f8454b5e2aeea2a217d6da295647c4ee591bcb9ccbbf9e4b9f02c34a",
+        "opg37271-c24-check.py": "a08392a8d9ed6cd37c2945f9c68c0c8e8356bdf4f8a861e5bc746cb4d9420ef0"
+      },
+      "stage": "check-n8-g2",
+      "started": "2026-09-07T16:31:07.486196+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 481,
+      "stdout_sha256": "8ba8c92b52c60c966f7f3d16f15e9bbff368fd4068d2f9a449ec6e6fa07d8b8d",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "c24-space",
+        "n8-g3.txt",
+        "n8-g3"
+      ],
+      "elapsed": 0.469499,
+      "ended": "2026-09-07T16:31:17.210875+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "n8-g3.txt": "587d24304728261e3273c762fb57bc3761d8014185dcf76553a27a9745354ffd",
+        "opg37271-c24-space.cpp": "01f8ee7d1fc130cc2da9a9ce9b7e33daf1b647cc097f3eed24f2f2eb4b5021fd"
+      },
+      "stage": "space-n8-g3",
+      "started": "2026-09-07T16:31:16.741394+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 286,
+      "stdout_sha256": "b94513360b5c6f777d3023c4df63abc08a3e653e59619a6ab1fd2d78ff529021",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "python3",
+        "opg37271-c24-check.py",
+        "n8-g3"
+      ],
+      "elapsed": 11.065743,
+      "ended": "2026-09-07T16:31:28.278313+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "n8-g3.states": "a2410adf414d7db45cfd7cd72f2b657452397d4f4c560611c6cb6c47b9c35271",
+        "n8-g3.txt": "587d24304728261e3273c762fb57bc3761d8014185dcf76553a27a9745354ffd",
+        "opg37271-c24-check.py": "a08392a8d9ed6cd37c2945f9c68c0c8e8356bdf4f8a861e5bc746cb4d9420ef0"
+      },
+      "stage": "check-n8-g3",
+      "started": "2026-09-07T16:31:17.212633+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 488,
+      "stdout_sha256": "e299a39b2d120006f8eeeb6e4e3cd26c27b93102e4ece0c3cae8111e8644ccd1",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "c24-space",
+        "n8-g4.txt",
+        "n8-g4"
+      ],
+      "elapsed": 0.472918,
+      "ended": "2026-09-07T16:31:28.759792+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "n8-g4.txt": "cb15aa5025c917656e287c35adc0b40d9bcd6d29d292eca4e1fc53b7b62bbb88",
+        "opg37271-c24-space.cpp": "01f8ee7d1fc130cc2da9a9ce9b7e33daf1b647cc097f3eed24f2f2eb4b5021fd"
+      },
+      "stage": "space-n8-g4",
+      "started": "2026-09-07T16:31:28.286884+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 286,
+      "stdout_sha256": "2ef161488a1d3653ab1c82191b4b80516c6801601d4842b69b6e0b76a112ce69",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "python3",
+        "opg37271-c24-check.py",
+        "n8-g4"
+      ],
+      "elapsed": 9.813187,
+      "ended": "2026-09-07T16:31:38.574985+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "n8-g4.states": "3df5912be4db72256b38734de6aa50140e6d967dc2967e327ef3a33c3553cafb",
+        "n8-g4.txt": "cb15aa5025c917656e287c35adc0b40d9bcd6d29d292eca4e1fc53b7b62bbb88",
+        "opg37271-c24-check.py": "a08392a8d9ed6cd37c2945f9c68c0c8e8356bdf4f8a861e5bc746cb4d9420ef0"
+      },
+      "stage": "check-n8-g4",
+      "started": "2026-09-07T16:31:28.761819+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 487,
+      "stdout_sha256": "f15c52fa2fded2b07ae806ae5c7d1077f50443cd7ca6f1e5d3f86b8727e037aa",
+      "timed_out": false
+    },
+    {
+      "argv": [
+        "python3",
+        "opg37271-c24-audit.py"
+      ],
+      "elapsed": 0.744545,
+      "ended": "2026-09-07T16:31:39.322834+00:00",
+      "exit_code": 0,
+      "inputs": {
+        "opg37271-c24-audit.py": "8ad3edb3853f55f0873f7ca7fe57e1da916c73b85d958b66e9ef98d85b4d42a3",
+        "opg37271-c24-check.py": "a08392a8d9ed6cd37c2945f9c68c0c8e8356bdf4f8a861e5bc746cb4d9420ef0"
+      },
+      "stage": "audit",
+      "started": "2026-09-07T16:31:38.578351+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 225,
+      "stdout_sha256": "2995c1d27ec69d590c0c53f9ad321c05916f4743d38fb6715ff645423ced7a70",
+      "timed_out": false
+    }
+  ],
+  "trust_domain": "candidate-generation",
+  "trusted_verifier_run": null,
+  "verdict": "candidate_only"
+}
