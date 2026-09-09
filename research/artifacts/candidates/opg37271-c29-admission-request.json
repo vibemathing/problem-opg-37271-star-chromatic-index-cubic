@@ -1,0 +1,31 @@
+{
+  "schema_version": "c29-local-admission-request-1",
+  "verdict": "candidate_only",
+  "best_verified_result": "none",
+  "repository": "vibemathing/problem-opg-37271-star-chromatic-index-cubic",
+  "problem_id": "problem:opg-37271-star-chromatic-index-cubic",
+  "transport_obligation": "obligation:opg37271-root",
+  "claim_scope": "Every legal finite simple subcubic preframe containing the specified thirteen-edge nine-vertex colored motif admits simultaneous02:A1->A4 and08:A2->A3 with the same U and a pointwise loss of at least one actual forbidden four-edge shape, for every phase. All global optima exclude this motif; other embeddings and ROOT remain open.",
+  "proof_locator": "research/artifacts/candidates/opg37271-c29-proof.md",
+  "proof_sha256": "e452a6944da25af177530d62c5d73599d588e4c05d3747dc3b55c5204cf1c0ed",
+  "input_locator": "research/artifacts/candidates/opg37271-c29-input.json",
+  "input_sha256": "83e7c139363ef1e79e1b4068c859bf12ca1f307a1772d486d392953420e84346",
+  "requested_capabilities": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "formal_source": null,
+  "trusted_receipt": null,
+  "closure_receipt": null,
+  "missing_gate": [
+    "Exact local theorem admission must not be confused with the transport root binding.",
+    "Faithful formal source plus allowlisted trusted toolchain execution is not supplied.",
+    "Separate axiom/escape and semantic review, EvidenceLink and obligation closure require trusted owners."
+  ],
+  "candidate_replay_command": [
+    "python3",
+    "research/artifacts/candidates/opg37271-c29-run.py"
+  ],
+  "candidate_replay_is_trusted": false
+}
