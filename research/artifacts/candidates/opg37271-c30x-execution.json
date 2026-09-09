@@ -1,0 +1,96 @@
+{
+  "best_verified_result": "none",
+  "completed": true,
+  "ended_at": "2026-09-09T05:42:13.623367+00:00",
+  "input_revision": "3ee4c60c3feb274e60b9a54e430c2d135f77fed8",
+  "interpreter": {
+    "binary_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+    "implementation": "CPython",
+    "version": "3.13.5"
+  },
+  "limits": {
+    "cpu_hard_seconds": 31,
+    "cpu_soft_seconds": 30,
+    "file_bytes": 1048576,
+    "memory_bytes": 805306368,
+    "stderr_bytes": 16384,
+    "stdout_bytes": 65536,
+    "threads": 1,
+    "wall_seconds": 35
+  },
+  "output_sha256": {
+    "opg37271-c30x-certificate.json": "fa2230c265554639c9cfa0ce49bb2ecfeb87c60a7320a3bb9785b12441559753",
+    "opg37271-c30x-check-result.json": "0e44937763bf6b3832a9c969f1c252b05311131ebafee9190c724d82f0870e40",
+    "opg37271-c30x-mutations.json": "82caa1481c2459795ff09e0129b32fa14fd6bf18c9b393ad7c33467d8a1f3482"
+  },
+  "preliminary_diagnostics": [
+    "Two preliminary complete-checker runs reached CPU limit (exit -24). Residual-degree-feasible passive graph enumeration replaced flat 5^pairs enumeration; final replay is separate.",
+    "An initial mutation fixture had h=0 for every boundary and thus could not test omission of nonzero h. A distinct actual nonzero-h fixture was selected; that preliminary test was not counted as a passed mutation."
+  ],
+  "scope": "All exact seven-row, three-U-component realizations of orders8,9,10, including all passive D completions on the fixed vertices; not a general ten-vertex frame census or arbitrary-order embedding theorem.",
+  "source_sha256": {
+    "opg37271-c30x-check.py": "4d00fa7015db5802b475854a81da59d88cc55b9ce5497b346fbf11e31f420db2",
+    "opg37271-c30x-input.json": "fec5fdca4535875efe5512067c4def3620a7d3e0f8c15438a126762d4470dcaf",
+    "opg37271-c30x-mutations.py": "ed76b10be4e176a0e93d2c5f13c6cb175a57f0213611e4dc72821c7fe14a3fe8",
+    "opg37271-c30x-produce.py": "a7f02ae72f62585356fedd3a93d49d01726083c690900f5d4e90d2302c49a1d9",
+    "opg37271-c30x-run.py": "ce63b7cbba663996a4c032a51bbbbac2b49fa1941a25598ddf78c2825c02ba6d"
+  },
+  "sources_unchanged": true,
+  "stages": [
+    {
+      "command": [
+        "python3",
+        "research/artifacts/candidates/opg37271-c30x-produce.py"
+      ],
+      "elapsed_seconds": 6.284467,
+      "ended_at": "2026-09-09T05:42:07.338498+00:00",
+      "exit_code": 0,
+      "name": "opg37271-c30x-produce.py",
+      "output_limit_exceeded": false,
+      "started_at": "2026-09-09T05:42:01.054046+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 214,
+      "stdout_sha256": "7d967af44ed19901ca08ccdf1039bef03add9c886799c658171f1ad6a9d8e5f5",
+      "timed_out": false
+    },
+    {
+      "command": [
+        "python3",
+        "research/artifacts/candidates/opg37271-c30x-check.py"
+      ],
+      "elapsed_seconds": 5.575032,
+      "ended_at": "2026-09-09T05:42:12.913676+00:00",
+      "exit_code": 0,
+      "name": "opg37271-c30x-check.py",
+      "output_limit_exceeded": false,
+      "started_at": "2026-09-09T05:42:07.338682+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 394,
+      "stdout_sha256": "c9bf5b13207c759833c0c2416f12addf6411bc906936a5a8633282d8669f0495",
+      "timed_out": false
+    },
+    {
+      "command": [
+        "python3",
+        "research/artifacts/candidates/opg37271-c30x-mutations.py"
+      ],
+      "elapsed_seconds": 0.709118,
+      "ended_at": "2026-09-09T05:42:13.622954+00:00",
+      "exit_code": 0,
+      "name": "opg37271-c30x-mutations.py",
+      "output_limit_exceeded": false,
+      "started_at": "2026-09-09T05:42:12.913857+00:00",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 43,
+      "stdout_sha256": "bc1787dbe8eace08bb45ace2fd96aa278dbe4d1424fd8455d4a559a02bb96e52",
+      "timed_out": false
+    }
+  ],
+  "started_at": "2026-09-09T05:42:01.047616+00:00",
+  "state": "NONTERMINAL_CHECKPOINT",
+  "trusted_execution": false,
+  "verdict": "candidate_only"
+}
